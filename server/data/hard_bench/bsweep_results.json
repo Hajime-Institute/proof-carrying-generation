@@ -1,0 +1,2083 @@
+[
+  {
+    "app": "shop",
+    "model": "gpt-5.2",
+    "tier": "frontier-oai",
+    "certPre": 11,
+    "refPre": 1,
+    "cert": 12,
+    "ref": 0,
+    "total": 12,
+    "by": {
+      "reach": [
+        5,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "effect": [
+        1,
+        0
+      ],
+      "valid": [
+        1,
+        0
+      ],
+      "gated": [
+        1,
+        0
+      ]
+    },
+    "certTraj": [
+      11,
+      12
+    ],
+    "validTraj": [
+      0,
+      1
+    ],
+    "vtot": 1,
+    "lastImprove": 1,
+    "budget": 5,
+    "refuted": [],
+    "V": {
+      "reach:catalog": {
+        "verdict": "certified",
+        "trace": "#catalog visible"
+      },
+      "reach:product": {
+        "verdict": "certified",
+        "trace": "#product visible"
+      },
+      "reach:cart": {
+        "verdict": "certified",
+        "trace": "#cart visible"
+      },
+      "reach:shipping": {
+        "verdict": "certified",
+        "trace": "#shipping visible"
+      },
+      "reach:done": {
+        "verdict": "certified",
+        "trace": "#done visible"
+      },
+      "trans:cmp-open-product": {
+        "verdict": "certified",
+        "trace": "click cmp-open-product -> #product"
+      },
+      "trans:cmp-view-cart": {
+        "verdict": "certified",
+        "trace": "click cmp-view-cart -> #cart"
+      },
+      "trans:cmp-back-catalog": {
+        "verdict": "certified",
+        "trace": "click cmp-back-catalog -> #catalog"
+      },
+      "trans:cmp-cart-checkout": {
+        "verdict": "certified",
+        "trace": "click cmp-cart-checkout -> #shipping"
+      },
+      "effect:cmp-add-to-cart": {
+        "verdict": "certified",
+        "trace": "st-cart-count: \"0\"->\"1\""
+      },
+      "valid:cmp-place-order-v": {
+        "verdict": "certified",
+        "trace": "empty submit: error=true stayed=true"
+      },
+      "gated:cmp-place-order": {
+        "verdict": "certified",
+        "trace": "fill+submit cmp-place-order -> #done"
+      }
+    }
+  },
+  {
+    "app": "shop",
+    "model": "gemini-3.5-flash",
+    "tier": "frontier-google",
+    "certPre": 11,
+    "refPre": 1,
+    "cert": 12,
+    "ref": 0,
+    "total": 12,
+    "by": {
+      "reach": [
+        5,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "effect": [
+        1,
+        0
+      ],
+      "valid": [
+        1,
+        0
+      ],
+      "gated": [
+        1,
+        0
+      ]
+    },
+    "certTraj": [
+      11,
+      11,
+      11,
+      11,
+      12
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "vtot": 1,
+    "lastImprove": 4,
+    "budget": 5,
+    "refuted": [],
+    "V": {
+      "reach:catalog": {
+        "verdict": "certified",
+        "trace": "#catalog visible"
+      },
+      "reach:product": {
+        "verdict": "certified",
+        "trace": "#product visible"
+      },
+      "reach:cart": {
+        "verdict": "certified",
+        "trace": "#cart visible"
+      },
+      "reach:shipping": {
+        "verdict": "certified",
+        "trace": "#shipping visible"
+      },
+      "reach:done": {
+        "verdict": "certified",
+        "trace": "#done visible"
+      },
+      "trans:cmp-open-product": {
+        "verdict": "certified",
+        "trace": "click cmp-open-product -> #product"
+      },
+      "trans:cmp-view-cart": {
+        "verdict": "certified",
+        "trace": "click cmp-view-cart -> #cart"
+      },
+      "trans:cmp-back-catalog": {
+        "verdict": "certified",
+        "trace": "click cmp-back-catalog -> #catalog"
+      },
+      "trans:cmp-cart-checkout": {
+        "verdict": "certified",
+        "trace": "click cmp-cart-checkout -> #shipping"
+      },
+      "effect:cmp-add-to-cart": {
+        "verdict": "certified",
+        "trace": "st-cart-count: \"0\"->\"1\""
+      },
+      "valid:cmp-place-order-v": {
+        "verdict": "certified",
+        "trace": "empty submit: error=true stayed=true"
+      },
+      "gated:cmp-place-order": {
+        "verdict": "certified",
+        "trace": "fill+submit cmp-place-order -> #done"
+      }
+    }
+  },
+  {
+    "app": "clinic",
+    "model": "gpt-5.2",
+    "tier": "frontier-oai",
+    "certPre": 9,
+    "refPre": 2,
+    "cert": 9,
+    "ref": 2,
+    "total": 11,
+    "by": {
+      "reach": [
+        5,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "valid": [
+        0,
+        1
+      ],
+      "gated": [
+        0,
+        1
+      ]
+    },
+    "certTraj": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 1,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-patient-next-v",
+      "gated:cmp-patient-next"
+    ],
+    "V": {
+      "reach:doctors": {
+        "verdict": "certified",
+        "trace": "#doctors visible"
+      },
+      "reach:slot": {
+        "verdict": "certified",
+        "trace": "#slot visible"
+      },
+      "reach:patient": {
+        "verdict": "certified",
+        "trace": "#patient visible"
+      },
+      "reach:confirm": {
+        "verdict": "certified",
+        "trace": "#confirm visible"
+      },
+      "reach:booked": {
+        "verdict": "certified",
+        "trace": "#booked visible"
+      },
+      "trans:cmp-pick-doctor": {
+        "verdict": "certified",
+        "trace": "click cmp-pick-doctor -> #slot"
+      },
+      "trans:cmp-pick-slot": {
+        "verdict": "certified",
+        "trace": "click cmp-pick-slot -> #patient"
+      },
+      "trans:cmp-confirm-book": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-book -> #booked"
+      },
+      "trans:cmp-back-slot": {
+        "verdict": "certified",
+        "trace": "click cmp-back-slot -> #slot"
+      },
+      "valid:cmp-patient-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-patient-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-patient-next -> #confirm"
+      }
+    }
+  },
+  {
+    "app": "clinic",
+    "model": "gemini-3.5-flash",
+    "tier": "frontier-google",
+    "certPre": 10,
+    "refPre": 1,
+    "cert": 10,
+    "ref": 1,
+    "total": 11,
+    "by": {
+      "reach": [
+        5,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "valid": [
+        0,
+        1
+      ],
+      "gated": [
+        1,
+        0
+      ]
+    },
+    "certTraj": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 1,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-patient-next-v"
+    ],
+    "V": {
+      "reach:doctors": {
+        "verdict": "certified",
+        "trace": "#doctors visible"
+      },
+      "reach:slot": {
+        "verdict": "certified",
+        "trace": "#slot visible"
+      },
+      "reach:patient": {
+        "verdict": "certified",
+        "trace": "#patient visible"
+      },
+      "reach:confirm": {
+        "verdict": "certified",
+        "trace": "#confirm visible"
+      },
+      "reach:booked": {
+        "verdict": "certified",
+        "trace": "#booked visible"
+      },
+      "trans:cmp-pick-doctor": {
+        "verdict": "certified",
+        "trace": "click cmp-pick-doctor -> #slot"
+      },
+      "trans:cmp-pick-slot": {
+        "verdict": "certified",
+        "trace": "click cmp-pick-slot -> #patient"
+      },
+      "trans:cmp-confirm-book": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-book -> #booked"
+      },
+      "trans:cmp-back-slot": {
+        "verdict": "certified",
+        "trace": "click cmp-back-slot -> #slot"
+      },
+      "valid:cmp-patient-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-patient-next": {
+        "verdict": "certified",
+        "trace": "fill+submit cmp-patient-next -> #confirm"
+      }
+    }
+  },
+  {
+    "app": "todo",
+    "model": "gpt-5.2",
+    "tier": "frontier-oai",
+    "certPre": 7,
+    "refPre": 2,
+    "cert": 7,
+    "ref": 2,
+    "total": 9,
+    "by": {
+      "reach": [
+        3,
+        0
+      ],
+      "trans": [
+        3,
+        0
+      ],
+      "effect": [
+        1,
+        0
+      ],
+      "valid": [
+        0,
+        1
+      ],
+      "gated": [
+        0,
+        1
+      ]
+    },
+    "certTraj": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 1,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-create-task-v",
+      "gated:cmp-create-task"
+    ],
+    "V": {
+      "reach:board": {
+        "verdict": "certified",
+        "trace": "#board visible"
+      },
+      "reach:newTask": {
+        "verdict": "certified",
+        "trace": "#newTask visible"
+      },
+      "reach:taskDetail": {
+        "verdict": "certified",
+        "trace": "#taskDetail visible"
+      },
+      "trans:cmp-open-new": {
+        "verdict": "certified",
+        "trace": "click cmp-open-new -> #newTask"
+      },
+      "trans:cmp-open-task": {
+        "verdict": "certified",
+        "trace": "click cmp-open-task -> #taskDetail"
+      },
+      "trans:cmp-back-board": {
+        "verdict": "certified",
+        "trace": "click cmp-back-board -> #board"
+      },
+      "effect:cmp-complete-task": {
+        "verdict": "certified",
+        "trace": "st-done-count: \"1\"->\"2\""
+      },
+      "valid:cmp-create-task-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-create-task": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-create-task -> #board"
+      }
+    }
+  },
+  {
+    "app": "todo",
+    "model": "gemini-3.5-flash",
+    "tier": "frontier-google",
+    "certPre": 6,
+    "refPre": 3,
+    "cert": 9,
+    "ref": 0,
+    "total": 9,
+    "by": {
+      "reach": [
+        3,
+        0
+      ],
+      "trans": [
+        3,
+        0
+      ],
+      "effect": [
+        1,
+        0
+      ],
+      "valid": [
+        1,
+        0
+      ],
+      "gated": [
+        1,
+        0
+      ]
+    },
+    "certTraj": [
+      6,
+      7,
+      7,
+      9
+    ],
+    "validTraj": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "vtot": 1,
+    "lastImprove": 3,
+    "budget": 5,
+    "refuted": [],
+    "V": {
+      "reach:board": {
+        "verdict": "certified",
+        "trace": "#board visible"
+      },
+      "reach:newTask": {
+        "verdict": "certified",
+        "trace": "#newTask visible"
+      },
+      "reach:taskDetail": {
+        "verdict": "certified",
+        "trace": "#taskDetail visible"
+      },
+      "trans:cmp-open-new": {
+        "verdict": "certified",
+        "trace": "click cmp-open-new -> #newTask"
+      },
+      "trans:cmp-open-task": {
+        "verdict": "certified",
+        "trace": "click cmp-open-task -> #taskDetail"
+      },
+      "trans:cmp-back-board": {
+        "verdict": "certified",
+        "trace": "click cmp-back-board -> #board"
+      },
+      "effect:cmp-complete-task": {
+        "verdict": "certified",
+        "trace": "st-done-count: \"0\"->\"1\""
+      },
+      "valid:cmp-create-task-v": {
+        "verdict": "certified",
+        "trace": "empty submit: error=true stayed=true"
+      },
+      "gated:cmp-create-task": {
+        "verdict": "certified",
+        "trace": "fill+submit cmp-create-task -> #board"
+      }
+    }
+  },
+  {
+    "app": "bank",
+    "model": "gpt-5.2",
+    "tier": "frontier-oai",
+    "certPre": 9,
+    "refPre": 3,
+    "cert": 10,
+    "ref": 2,
+    "total": 12,
+    "by": {
+      "reach": [
+        5,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "effect": [
+        1,
+        0
+      ],
+      "valid": [
+        0,
+        1
+      ],
+      "gated": [
+        0,
+        1
+      ]
+    },
+    "certTraj": [
+      9,
+      9,
+      10,
+      10,
+      10,
+      10
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 1,
+    "lastImprove": 2,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-transfer-next-v",
+      "gated:cmp-transfer-next"
+    ],
+    "V": {
+      "reach:accounts": {
+        "verdict": "certified",
+        "trace": "#accounts visible"
+      },
+      "reach:transfer": {
+        "verdict": "certified",
+        "trace": "#transfer visible"
+      },
+      "reach:confirm": {
+        "verdict": "certified",
+        "trace": "#confirm visible"
+      },
+      "reach:done": {
+        "verdict": "certified",
+        "trace": "#done visible"
+      },
+      "reach:history": {
+        "verdict": "certified",
+        "trace": "#history visible"
+      },
+      "trans:cmp-open-transfer": {
+        "verdict": "certified",
+        "trace": "click cmp-open-transfer -> #transfer"
+      },
+      "trans:cmp-open-history": {
+        "verdict": "certified",
+        "trace": "click cmp-open-history -> #history"
+      },
+      "trans:cmp-confirm-send": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-send -> #done"
+      },
+      "trans:cmp-done-accounts": {
+        "verdict": "certified",
+        "trace": "click cmp-done-accounts -> #accounts"
+      },
+      "effect:cmp-apply-transfer": {
+        "verdict": "certified",
+        "trace": "st-balance: \"2850\"->\"2851\""
+      },
+      "valid:cmp-transfer-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-transfer-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-transfer-next -> #confirm"
+      }
+    }
+  },
+  {
+    "app": "bank",
+    "model": "gemini-3.5-flash",
+    "tier": "frontier-google",
+    "certPre": 9,
+    "refPre": 3,
+    "cert": 9,
+    "ref": 3,
+    "total": 12,
+    "by": {
+      "reach": [
+        5,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "effect": [
+        0,
+        1
+      ],
+      "valid": [
+        0,
+        1
+      ],
+      "gated": [
+        0,
+        1
+      ]
+    },
+    "certTraj": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 1,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "effect:cmp-apply-transfer",
+      "valid:cmp-transfer-next-v",
+      "gated:cmp-transfer-next"
+    ],
+    "V": {
+      "reach:accounts": {
+        "verdict": "certified",
+        "trace": "#accounts visible"
+      },
+      "reach:transfer": {
+        "verdict": "certified",
+        "trace": "#transfer visible"
+      },
+      "reach:confirm": {
+        "verdict": "certified",
+        "trace": "#confirm visible"
+      },
+      "reach:done": {
+        "verdict": "certified",
+        "trace": "#done visible"
+      },
+      "reach:history": {
+        "verdict": "certified",
+        "trace": "#history visible"
+      },
+      "trans:cmp-open-transfer": {
+        "verdict": "certified",
+        "trace": "click cmp-open-transfer -> #transfer"
+      },
+      "trans:cmp-open-history": {
+        "verdict": "certified",
+        "trace": "click cmp-open-history -> #history"
+      },
+      "trans:cmp-confirm-send": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-send -> #done"
+      },
+      "trans:cmp-done-accounts": {
+        "verdict": "certified",
+        "trace": "click cmp-done-accounts -> #accounts"
+      },
+      "effect:cmp-apply-transfer": {
+        "verdict": "refuted",
+        "trace": "st-balance: \"12450\"->\"12450\""
+      },
+      "valid:cmp-transfer-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-transfer-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-transfer-next -> #confirm"
+      }
+    }
+  },
+  {
+    "app": "signup",
+    "model": "gpt-5.2",
+    "tier": "frontier-oai",
+    "certPre": 6,
+    "refPre": 4,
+    "cert": 6,
+    "ref": 4,
+    "total": 10,
+    "by": {
+      "reach": [
+        4,
+        0
+      ],
+      "trans": [
+        2,
+        0
+      ],
+      "valid": [
+        0,
+        2
+      ],
+      "gated": [
+        0,
+        2
+      ]
+    },
+    "certTraj": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 2,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-account-next-v",
+      "valid:cmp-workspace-next-v",
+      "gated:cmp-account-next",
+      "gated:cmp-workspace-next"
+    ],
+    "V": {
+      "reach:landing": {
+        "verdict": "certified",
+        "trace": "#landing visible"
+      },
+      "reach:account": {
+        "verdict": "certified",
+        "trace": "#account visible"
+      },
+      "reach:workspace": {
+        "verdict": "certified",
+        "trace": "#workspace visible"
+      },
+      "reach:ready": {
+        "verdict": "certified",
+        "trace": "#ready visible"
+      },
+      "trans:cmp-start": {
+        "verdict": "certified",
+        "trace": "click cmp-start -> #account"
+      },
+      "trans:cmp-enter-app": {
+        "verdict": "certified",
+        "trace": "click cmp-enter-app -> #workspace"
+      },
+      "valid:cmp-account-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "valid:cmp-workspace-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-account-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-account-next -> #workspace"
+      },
+      "gated:cmp-workspace-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-workspace-next -> #ready"
+      }
+    }
+  },
+  {
+    "app": "signup",
+    "model": "gemini-3.5-flash",
+    "tier": "frontier-google",
+    "certPre": 8,
+    "refPre": 2,
+    "cert": 8,
+    "ref": 2,
+    "total": 10,
+    "by": {
+      "reach": [
+        4,
+        0
+      ],
+      "trans": [
+        2,
+        0
+      ],
+      "valid": [
+        0,
+        2
+      ],
+      "gated": [
+        2,
+        0
+      ]
+    },
+    "certTraj": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 2,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-account-next-v",
+      "valid:cmp-workspace-next-v"
+    ],
+    "V": {
+      "reach:landing": {
+        "verdict": "certified",
+        "trace": "#landing visible"
+      },
+      "reach:account": {
+        "verdict": "certified",
+        "trace": "#account visible"
+      },
+      "reach:workspace": {
+        "verdict": "certified",
+        "trace": "#workspace visible"
+      },
+      "reach:ready": {
+        "verdict": "certified",
+        "trace": "#ready visible"
+      },
+      "trans:cmp-start": {
+        "verdict": "certified",
+        "trace": "click cmp-start -> #account"
+      },
+      "trans:cmp-enter-app": {
+        "verdict": "certified",
+        "trace": "click cmp-enter-app -> #workspace"
+      },
+      "valid:cmp-account-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "valid:cmp-workspace-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-account-next": {
+        "verdict": "certified",
+        "trace": "fill+submit cmp-account-next -> #workspace"
+      },
+      "gated:cmp-workspace-next": {
+        "verdict": "certified",
+        "trace": "fill+submit cmp-workspace-next -> #ready"
+      }
+    }
+  },
+  {
+    "app": "expense",
+    "model": "gpt-5.2",
+    "tier": "frontier-oai",
+    "certPre": 8,
+    "refPre": 3,
+    "cert": 9,
+    "ref": 2,
+    "total": 11,
+    "by": {
+      "reach": [
+        4,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "effect": [
+        1,
+        0
+      ],
+      "valid": [
+        0,
+        1
+      ],
+      "gated": [
+        0,
+        1
+      ]
+    },
+    "certTraj": [
+      8,
+      8,
+      9,
+      9,
+      9,
+      9
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 1,
+    "lastImprove": 2,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-expense-next-v",
+      "gated:cmp-expense-next"
+    ],
+    "V": {
+      "reach:list": {
+        "verdict": "certified",
+        "trace": "#list visible"
+      },
+      "reach:add": {
+        "verdict": "certified",
+        "trace": "#add visible"
+      },
+      "reach:submit": {
+        "verdict": "certified",
+        "trace": "#submit visible"
+      },
+      "reach:submitted": {
+        "verdict": "certified",
+        "trace": "#submitted visible"
+      },
+      "trans:cmp-open-add": {
+        "verdict": "certified",
+        "trace": "click cmp-open-add -> #add"
+      },
+      "trans:cmp-open-submit": {
+        "verdict": "certified",
+        "trace": "click cmp-open-submit -> #submit"
+      },
+      "trans:cmp-confirm-submit": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-submit -> #submitted"
+      },
+      "trans:cmp-submitted-list": {
+        "verdict": "certified",
+        "trace": "click cmp-submitted-list -> #list"
+      },
+      "effect:cmp-save-expense": {
+        "verdict": "certified",
+        "trace": "st-total: \"128\"->\"129\""
+      },
+      "valid:cmp-expense-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-expense-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-expense-next -> #submit"
+      }
+    }
+  },
+  {
+    "app": "expense",
+    "model": "gemini-3.5-flash",
+    "tier": "frontier-google",
+    "certPre": 8,
+    "refPre": 3,
+    "cert": 8,
+    "ref": 3,
+    "total": 11,
+    "by": {
+      "reach": [
+        4,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "effect": [
+        0,
+        1
+      ],
+      "valid": [
+        0,
+        1
+      ],
+      "gated": [
+        0,
+        1
+      ]
+    },
+    "certTraj": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 1,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "effect:cmp-save-expense",
+      "valid:cmp-expense-next-v",
+      "gated:cmp-expense-next"
+    ],
+    "V": {
+      "reach:list": {
+        "verdict": "certified",
+        "trace": "#list visible"
+      },
+      "reach:add": {
+        "verdict": "certified",
+        "trace": "#add visible"
+      },
+      "reach:submit": {
+        "verdict": "certified",
+        "trace": "#submit visible"
+      },
+      "reach:submitted": {
+        "verdict": "certified",
+        "trace": "#submitted visible"
+      },
+      "trans:cmp-open-add": {
+        "verdict": "certified",
+        "trace": "click cmp-open-add -> #add"
+      },
+      "trans:cmp-open-submit": {
+        "verdict": "certified",
+        "trace": "click cmp-open-submit -> #submit"
+      },
+      "trans:cmp-confirm-submit": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-submit -> #submitted"
+      },
+      "trans:cmp-submitted-list": {
+        "verdict": "certified",
+        "trace": "click cmp-submitted-list -> #list"
+      },
+      "effect:cmp-save-expense": {
+        "verdict": "refuted",
+        "trace": "st-total: \"185\"->\"185\""
+      },
+      "valid:cmp-expense-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-expense-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-expense-next -> #submit"
+      }
+    }
+  },
+  {
+    "app": "hotel",
+    "model": "gpt-5.2",
+    "tier": "frontier-oai",
+    "certPre": 11,
+    "refPre": 3,
+    "cert": 11,
+    "ref": 3,
+    "total": 14,
+    "by": {
+      "reach": [
+        6,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "valid": [
+        0,
+        2
+      ],
+      "gated": [
+        1,
+        1
+      ]
+    },
+    "certTraj": [
+      11,
+      11,
+      11,
+      11,
+      11,
+      11
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 2,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-dates-next-v",
+      "valid:cmp-guest-next-v",
+      "gated:cmp-dates-next"
+    ],
+    "V": {
+      "reach:hotels": {
+        "verdict": "certified",
+        "trace": "#hotels visible"
+      },
+      "reach:room": {
+        "verdict": "certified",
+        "trace": "#room visible"
+      },
+      "reach:dates": {
+        "verdict": "certified",
+        "trace": "#dates visible"
+      },
+      "reach:guest": {
+        "verdict": "certified",
+        "trace": "#guest visible"
+      },
+      "reach:confirm": {
+        "verdict": "certified",
+        "trace": "#confirm visible"
+      },
+      "reach:booked": {
+        "verdict": "certified",
+        "trace": "#booked visible"
+      },
+      "trans:cmp-open-room": {
+        "verdict": "certified",
+        "trace": "click cmp-open-room -> #room"
+      },
+      "trans:cmp-open-dates": {
+        "verdict": "certified",
+        "trace": "click cmp-open-dates -> #dates"
+      },
+      "trans:cmp-confirm-hotel": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-hotel -> #booked"
+      },
+      "trans:cmp-back-hotels": {
+        "verdict": "certified",
+        "trace": "click cmp-back-hotels -> #hotels"
+      },
+      "valid:cmp-dates-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "valid:cmp-guest-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-dates-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-dates-next -> #guest"
+      },
+      "gated:cmp-guest-next": {
+        "verdict": "certified",
+        "trace": "fill+submit cmp-guest-next -> #confirm"
+      }
+    }
+  },
+  {
+    "app": "hotel",
+    "model": "gemini-3.5-flash",
+    "tier": "frontier-google",
+    "certPre": 11,
+    "refPre": 3,
+    "cert": 11,
+    "ref": 3,
+    "total": 14,
+    "by": {
+      "reach": [
+        6,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "valid": [
+        0,
+        2
+      ],
+      "gated": [
+        1,
+        1
+      ]
+    },
+    "certTraj": [
+      11,
+      11,
+      11,
+      11,
+      11,
+      11
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 2,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-dates-next-v",
+      "valid:cmp-guest-next-v",
+      "gated:cmp-dates-next"
+    ],
+    "V": {
+      "reach:hotels": {
+        "verdict": "certified",
+        "trace": "#hotels visible"
+      },
+      "reach:room": {
+        "verdict": "certified",
+        "trace": "#room visible"
+      },
+      "reach:dates": {
+        "verdict": "certified",
+        "trace": "#dates visible"
+      },
+      "reach:guest": {
+        "verdict": "certified",
+        "trace": "#guest visible"
+      },
+      "reach:confirm": {
+        "verdict": "certified",
+        "trace": "#confirm visible"
+      },
+      "reach:booked": {
+        "verdict": "certified",
+        "trace": "#booked visible"
+      },
+      "trans:cmp-open-room": {
+        "verdict": "certified",
+        "trace": "click cmp-open-room -> #room"
+      },
+      "trans:cmp-open-dates": {
+        "verdict": "certified",
+        "trace": "click cmp-open-dates -> #dates"
+      },
+      "trans:cmp-confirm-hotel": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-hotel -> #booked"
+      },
+      "trans:cmp-back-hotels": {
+        "verdict": "certified",
+        "trace": "click cmp-back-hotels -> #hotels"
+      },
+      "valid:cmp-dates-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "valid:cmp-guest-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-dates-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-dates-next -> #guest"
+      },
+      "gated:cmp-guest-next": {
+        "verdict": "certified",
+        "trace": "fill+submit cmp-guest-next -> #confirm"
+      }
+    }
+  },
+  {
+    "app": "shop",
+    "model": "claude-opus-4-8",
+    "tier": "frontier-anthropic",
+    "certPre": 12,
+    "refPre": 0,
+    "cert": 12,
+    "ref": 0,
+    "total": 12,
+    "by": {
+      "reach": [
+        5,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "effect": [
+        1,
+        0
+      ],
+      "valid": [
+        1,
+        0
+      ],
+      "gated": [
+        1,
+        0
+      ]
+    },
+    "certTraj": [
+      12
+    ],
+    "validTraj": [
+      1
+    ],
+    "vtot": 1,
+    "lastImprove": 0,
+    "budget": 2,
+    "refuted": [],
+    "V": {
+      "reach:catalog": {
+        "verdict": "certified",
+        "trace": "#catalog visible"
+      },
+      "reach:product": {
+        "verdict": "certified",
+        "trace": "#product visible"
+      },
+      "reach:cart": {
+        "verdict": "certified",
+        "trace": "#cart visible"
+      },
+      "reach:shipping": {
+        "verdict": "certified",
+        "trace": "#shipping visible"
+      },
+      "reach:done": {
+        "verdict": "certified",
+        "trace": "#done visible"
+      },
+      "trans:cmp-open-product": {
+        "verdict": "certified",
+        "trace": "click cmp-open-product -> #product"
+      },
+      "trans:cmp-view-cart": {
+        "verdict": "certified",
+        "trace": "click cmp-view-cart -> #cart"
+      },
+      "trans:cmp-back-catalog": {
+        "verdict": "certified",
+        "trace": "click cmp-back-catalog -> #catalog"
+      },
+      "trans:cmp-cart-checkout": {
+        "verdict": "certified",
+        "trace": "click cmp-cart-checkout -> #shipping"
+      },
+      "effect:cmp-add-to-cart": {
+        "verdict": "certified",
+        "trace": "st-cart-count: \"0\"->\"1\""
+      },
+      "valid:cmp-place-order-v": {
+        "verdict": "certified",
+        "trace": "empty submit: error=true stayed=true"
+      },
+      "gated:cmp-place-order": {
+        "verdict": "certified",
+        "trace": "fill+submit cmp-place-order -> #done"
+      }
+    }
+  },
+  {
+    "app": "clinic",
+    "model": "claude-opus-4-8",
+    "tier": "frontier-anthropic",
+    "certPre": 9,
+    "refPre": 2,
+    "cert": 9,
+    "ref": 2,
+    "total": 11,
+    "by": {
+      "reach": [
+        5,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "valid": [
+        0,
+        1
+      ],
+      "gated": [
+        0,
+        1
+      ]
+    },
+    "certTraj": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 1,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-patient-next-v",
+      "gated:cmp-patient-next"
+    ],
+    "V": {
+      "reach:doctors": {
+        "verdict": "certified",
+        "trace": "#doctors visible"
+      },
+      "reach:slot": {
+        "verdict": "certified",
+        "trace": "#slot visible"
+      },
+      "reach:patient": {
+        "verdict": "certified",
+        "trace": "#patient visible"
+      },
+      "reach:confirm": {
+        "verdict": "certified",
+        "trace": "#confirm visible"
+      },
+      "reach:booked": {
+        "verdict": "certified",
+        "trace": "#booked visible"
+      },
+      "trans:cmp-pick-doctor": {
+        "verdict": "certified",
+        "trace": "click cmp-pick-doctor -> #slot"
+      },
+      "trans:cmp-pick-slot": {
+        "verdict": "certified",
+        "trace": "click cmp-pick-slot -> #patient"
+      },
+      "trans:cmp-confirm-book": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-book -> #booked"
+      },
+      "trans:cmp-back-slot": {
+        "verdict": "certified",
+        "trace": "click cmp-back-slot -> #slot"
+      },
+      "valid:cmp-patient-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-patient-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-patient-next -> #confirm"
+      }
+    }
+  },
+  {
+    "app": "todo",
+    "model": "claude-opus-4-8",
+    "tier": "frontier-anthropic",
+    "certPre": 7,
+    "refPre": 2,
+    "cert": 7,
+    "ref": 2,
+    "total": 9,
+    "by": {
+      "reach": [
+        3,
+        0
+      ],
+      "trans": [
+        3,
+        0
+      ],
+      "effect": [
+        1,
+        0
+      ],
+      "valid": [
+        0,
+        1
+      ],
+      "gated": [
+        0,
+        1
+      ]
+    },
+    "certTraj": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 1,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-create-task-v",
+      "gated:cmp-create-task"
+    ],
+    "V": {
+      "reach:board": {
+        "verdict": "certified",
+        "trace": "#board visible"
+      },
+      "reach:newTask": {
+        "verdict": "certified",
+        "trace": "#newTask visible"
+      },
+      "reach:taskDetail": {
+        "verdict": "certified",
+        "trace": "#taskDetail visible"
+      },
+      "trans:cmp-open-new": {
+        "verdict": "certified",
+        "trace": "click cmp-open-new -> #newTask"
+      },
+      "trans:cmp-open-task": {
+        "verdict": "certified",
+        "trace": "click cmp-open-task -> #taskDetail"
+      },
+      "trans:cmp-back-board": {
+        "verdict": "certified",
+        "trace": "click cmp-back-board -> #board"
+      },
+      "effect:cmp-complete-task": {
+        "verdict": "certified",
+        "trace": "st-done-count: \"1\"->\"2\""
+      },
+      "valid:cmp-create-task-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-create-task": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-create-task -> #board"
+      }
+    }
+  },
+  {
+    "app": "bank",
+    "model": "claude-opus-4-8",
+    "tier": "frontier-anthropic",
+    "certPre": 10,
+    "refPre": 2,
+    "cert": 10,
+    "ref": 2,
+    "total": 12,
+    "by": {
+      "reach": [
+        5,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "effect": [
+        1,
+        0
+      ],
+      "valid": [
+        0,
+        1
+      ],
+      "gated": [
+        0,
+        1
+      ]
+    },
+    "certTraj": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 1,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-transfer-next-v",
+      "gated:cmp-transfer-next"
+    ],
+    "V": {
+      "reach:accounts": {
+        "verdict": "certified",
+        "trace": "#accounts visible"
+      },
+      "reach:transfer": {
+        "verdict": "certified",
+        "trace": "#transfer visible"
+      },
+      "reach:confirm": {
+        "verdict": "certified",
+        "trace": "#confirm visible"
+      },
+      "reach:done": {
+        "verdict": "certified",
+        "trace": "#done visible"
+      },
+      "reach:history": {
+        "verdict": "certified",
+        "trace": "#history visible"
+      },
+      "trans:cmp-open-transfer": {
+        "verdict": "certified",
+        "trace": "click cmp-open-transfer -> #transfer"
+      },
+      "trans:cmp-open-history": {
+        "verdict": "certified",
+        "trace": "click cmp-open-history -> #history"
+      },
+      "trans:cmp-confirm-send": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-send -> #done"
+      },
+      "trans:cmp-done-accounts": {
+        "verdict": "certified",
+        "trace": "click cmp-done-accounts -> #accounts"
+      },
+      "effect:cmp-apply-transfer": {
+        "verdict": "certified",
+        "trace": "st-balance: \"3250\"->\"3100\""
+      },
+      "valid:cmp-transfer-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-transfer-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-transfer-next -> #confirm"
+      }
+    }
+  },
+  {
+    "app": "signup",
+    "model": "claude-opus-4-8",
+    "tier": "frontier-anthropic",
+    "certPre": 8,
+    "refPre": 2,
+    "cert": 8,
+    "ref": 2,
+    "total": 10,
+    "by": {
+      "reach": [
+        4,
+        0
+      ],
+      "trans": [
+        2,
+        0
+      ],
+      "valid": [
+        0,
+        2
+      ],
+      "gated": [
+        2,
+        0
+      ]
+    },
+    "certTraj": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 2,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-account-next-v",
+      "valid:cmp-workspace-next-v"
+    ],
+    "V": {
+      "reach:landing": {
+        "verdict": "certified",
+        "trace": "#landing visible"
+      },
+      "reach:account": {
+        "verdict": "certified",
+        "trace": "#account visible"
+      },
+      "reach:workspace": {
+        "verdict": "certified",
+        "trace": "#workspace visible"
+      },
+      "reach:ready": {
+        "verdict": "certified",
+        "trace": "#ready visible"
+      },
+      "trans:cmp-start": {
+        "verdict": "certified",
+        "trace": "click cmp-start -> #account"
+      },
+      "trans:cmp-enter-app": {
+        "verdict": "certified",
+        "trace": "click cmp-enter-app -> #workspace"
+      },
+      "valid:cmp-account-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "valid:cmp-workspace-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-account-next": {
+        "verdict": "certified",
+        "trace": "fill+submit cmp-account-next -> #workspace"
+      },
+      "gated:cmp-workspace-next": {
+        "verdict": "certified",
+        "trace": "fill+submit cmp-workspace-next -> #ready"
+      }
+    }
+  },
+  {
+    "app": "expense",
+    "model": "claude-opus-4-8",
+    "tier": "frontier-anthropic",
+    "certPre": 8,
+    "refPre": 3,
+    "cert": 8,
+    "ref": 3,
+    "total": 11,
+    "by": {
+      "reach": [
+        4,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "effect": [
+        0,
+        1
+      ],
+      "valid": [
+        0,
+        1
+      ],
+      "gated": [
+        0,
+        1
+      ]
+    },
+    "certTraj": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 1,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "effect:cmp-save-expense",
+      "valid:cmp-expense-next-v",
+      "gated:cmp-expense-next"
+    ],
+    "V": {
+      "reach:list": {
+        "verdict": "certified",
+        "trace": "#list visible"
+      },
+      "reach:add": {
+        "verdict": "certified",
+        "trace": "#add visible"
+      },
+      "reach:submit": {
+        "verdict": "certified",
+        "trace": "#submit visible"
+      },
+      "reach:submitted": {
+        "verdict": "certified",
+        "trace": "#submitted visible"
+      },
+      "trans:cmp-open-add": {
+        "verdict": "certified",
+        "trace": "click cmp-open-add -> #add"
+      },
+      "trans:cmp-open-submit": {
+        "verdict": "certified",
+        "trace": "click cmp-open-submit -> #submit"
+      },
+      "trans:cmp-confirm-submit": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-submit -> #submitted"
+      },
+      "trans:cmp-submitted-list": {
+        "verdict": "certified",
+        "trace": "click cmp-submitted-list -> #list"
+      },
+      "effect:cmp-save-expense": {
+        "verdict": "refuted",
+        "trace": "st-total: \"420\"->\"420\""
+      },
+      "valid:cmp-expense-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-expense-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-expense-next -> #submit"
+      }
+    }
+  },
+  {
+    "app": "hotel",
+    "model": "claude-opus-4-8",
+    "tier": "frontier-anthropic",
+    "certPre": 10,
+    "refPre": 4,
+    "cert": 10,
+    "ref": 4,
+    "total": 14,
+    "by": {
+      "reach": [
+        6,
+        0
+      ],
+      "trans": [
+        4,
+        0
+      ],
+      "valid": [
+        0,
+        2
+      ],
+      "gated": [
+        0,
+        2
+      ]
+    },
+    "certTraj": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "validTraj": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vtot": 2,
+    "lastImprove": 0,
+    "budget": 5,
+    "refuted": [
+      "valid:cmp-dates-next-v",
+      "valid:cmp-guest-next-v",
+      "gated:cmp-dates-next",
+      "gated:cmp-guest-next"
+    ],
+    "V": {
+      "reach:hotels": {
+        "verdict": "certified",
+        "trace": "#hotels visible"
+      },
+      "reach:room": {
+        "verdict": "certified",
+        "trace": "#room visible"
+      },
+      "reach:dates": {
+        "verdict": "certified",
+        "trace": "#dates visible"
+      },
+      "reach:guest": {
+        "verdict": "certified",
+        "trace": "#guest visible"
+      },
+      "reach:confirm": {
+        "verdict": "certified",
+        "trace": "#confirm visible"
+      },
+      "reach:booked": {
+        "verdict": "certified",
+        "trace": "#booked visible"
+      },
+      "trans:cmp-open-room": {
+        "verdict": "certified",
+        "trace": "click cmp-open-room -> #room"
+      },
+      "trans:cmp-open-dates": {
+        "verdict": "certified",
+        "trace": "click cmp-open-dates -> #dates"
+      },
+      "trans:cmp-confirm-hotel": {
+        "verdict": "certified",
+        "trace": "click cmp-confirm-hotel -> #booked"
+      },
+      "trans:cmp-back-hotels": {
+        "verdict": "certified",
+        "trace": "click cmp-back-hotels -> #hotels"
+      },
+      "valid:cmp-dates-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "valid:cmp-guest-next-v": {
+        "verdict": "refuted",
+        "trace": "empty submit: error=false stayed=true"
+      },
+      "gated:cmp-dates-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-dates-next -> #guest"
+      },
+      "gated:cmp-guest-next": {
+        "verdict": "refuted",
+        "trace": "fill+submit cmp-guest-next -> #confirm"
+      }
+    }
+  }
+]

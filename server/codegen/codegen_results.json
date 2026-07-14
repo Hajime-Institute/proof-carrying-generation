@@ -1,0 +1,1933 @@
+{
+  "summary": {
+    "cells": 24,
+    "kappaHeld": 24,
+    "specs": 8,
+    "models": [
+      "gpt-4o-mini",
+      "gemini-2.5-flash",
+      "gpt-4o"
+    ],
+    "judgeModel": "gemini-2.5-flash",
+    "judgeRuns": 3,
+    "example": {
+      "total": 129,
+      "certifiedPre": 128,
+      "certifiedPost": 128,
+      "ratePre": 0.9922480620155039,
+      "ratePost": 0.9922480620155039
+    },
+    "perModel": {
+      "gpt-4o-mini": {
+        "ex": 43,
+        "certPre": 42,
+        "certPost": 42
+      },
+      "gemini-2.5-flash": {
+        "ex": 43,
+        "certPre": 43,
+        "certPost": 43
+      },
+      "gpt-4o": {
+        "ex": 43,
+        "certPre": 43,
+        "certPost": 43
+      }
+    },
+    "universal": {
+      "obligations": 21,
+      "certificateOutOfFragment": 21,
+      "judgeConfidentGuesses": "21/21",
+      "judgeInconsistent": "5/21"
+    },
+    "finiteUniversalEDF": [
+      {
+        "model": "gpt-4o-mini",
+        "verdict": "certified"
+      },
+      {
+        "model": "gemini-2.5-flash",
+        "verdict": "certified"
+      },
+      {
+        "model": "gpt-4o",
+        "verdict": "certified"
+      }
+    ],
+    "judgeOnExamples": {
+      "accuracy": "127/129",
+      "falseCertifyOnBroken": "1/1",
+      "inconsistent": "0/129"
+    },
+    "certificate": {
+      "accuracy": "129/129",
+      "inconsistent": "0/129",
+      "replayable": true
+    }
+  },
+  "records": [
+    {
+      "spec": "email",
+      "model": "gpt-4o-mini",
+      "kappa": true,
+      "preVerdicts": {
+        "email:ex0": "certified",
+        "email:ex1": "certified",
+        "email:ex2": "certified",
+        "email:ex3": "certified",
+        "email:ex4": "certified",
+        "email:ex5": "certified"
+      },
+      "postVerdicts": {
+        "email:ex0": "certified",
+        "email:ex1": "certified",
+        "email:ex2": "certified",
+        "email:ex3": "certified",
+        "email:ex4": "certified",
+        "email:ex5": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "email:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex5",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "email",
+      "model": "gemini-2.5-flash",
+      "kappa": true,
+      "preVerdicts": {
+        "email:ex0": "certified",
+        "email:ex1": "certified",
+        "email:ex2": "certified",
+        "email:ex3": "certified",
+        "email:ex4": "certified",
+        "email:ex5": "certified"
+      },
+      "postVerdicts": {
+        "email:ex0": "certified",
+        "email:ex1": "certified",
+        "email:ex2": "certified",
+        "email:ex3": "certified",
+        "email:ex4": "certified",
+        "email:ex5": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "email:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex5",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "email",
+      "model": "gpt-4o",
+      "kappa": true,
+      "preVerdicts": {
+        "email:ex0": "certified",
+        "email:ex1": "certified",
+        "email:ex2": "certified",
+        "email:ex3": "certified",
+        "email:ex4": "certified",
+        "email:ex5": "certified"
+      },
+      "postVerdicts": {
+        "email:ex0": "certified",
+        "email:ex1": "certified",
+        "email:ex2": "certified",
+        "email:ex3": "certified",
+        "email:ex4": "certified",
+        "email:ex5": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "email:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "email:ex5",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "parseint",
+      "model": "gpt-4o-mini",
+      "kappa": true,
+      "preVerdicts": {
+        "parseint:ex0": "certified",
+        "parseint:ex1": "certified",
+        "parseint:ex2": "certified",
+        "parseint:ex3": "refuted",
+        "parseint:ex4": "certified",
+        "parseint:ex5": "certified",
+        "parseint:ex6": "certified"
+      },
+      "postVerdicts": {
+        "parseint:ex0": "certified",
+        "parseint:ex1": "certified",
+        "parseint:ex2": "refuted",
+        "parseint:ex3": "certified",
+        "parseint:ex4": "certified",
+        "parseint:ex5": "certified",
+        "parseint:ex6": "certified"
+      },
+      "repaired": true,
+      "jrows": [
+        {
+          "id": "parseint:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex2",
+          "gt": true,
+          "runs": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "parseint:ex3",
+          "gt": false,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex5",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex6",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "parseint",
+      "model": "gemini-2.5-flash",
+      "kappa": true,
+      "preVerdicts": {
+        "parseint:ex0": "certified",
+        "parseint:ex1": "certified",
+        "parseint:ex2": "certified",
+        "parseint:ex3": "certified",
+        "parseint:ex4": "certified",
+        "parseint:ex5": "certified",
+        "parseint:ex6": "certified"
+      },
+      "postVerdicts": {
+        "parseint:ex0": "certified",
+        "parseint:ex1": "certified",
+        "parseint:ex2": "certified",
+        "parseint:ex3": "certified",
+        "parseint:ex4": "certified",
+        "parseint:ex5": "certified",
+        "parseint:ex6": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "parseint:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex5",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex6",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "parseint",
+      "model": "gpt-4o",
+      "kappa": true,
+      "preVerdicts": {
+        "parseint:ex0": "certified",
+        "parseint:ex1": "certified",
+        "parseint:ex2": "certified",
+        "parseint:ex3": "certified",
+        "parseint:ex4": "certified",
+        "parseint:ex5": "certified",
+        "parseint:ex6": "certified"
+      },
+      "postVerdicts": {
+        "parseint:ex0": "certified",
+        "parseint:ex1": "certified",
+        "parseint:ex2": "certified",
+        "parseint:ex3": "certified",
+        "parseint:ex4": "certified",
+        "parseint:ex5": "certified",
+        "parseint:ex6": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "parseint:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex5",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "parseint:ex6",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "dedupe",
+      "model": "gpt-4o-mini",
+      "kappa": true,
+      "preVerdicts": {
+        "dedupe:ex0": "certified",
+        "dedupe:ex1": "certified",
+        "dedupe:ex2": "certified",
+        "dedupe:ex3": "certified"
+      },
+      "postVerdicts": {
+        "dedupe:ex0": "certified",
+        "dedupe:ex1": "certified",
+        "dedupe:ex2": "certified",
+        "dedupe:ex3": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "dedupe:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "dedupe:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "dedupe:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "dedupe:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "spec": "dedupe",
+      "model": "gemini-2.5-flash",
+      "kappa": true,
+      "preVerdicts": {
+        "dedupe:ex0": "certified",
+        "dedupe:ex1": "certified",
+        "dedupe:ex2": "certified",
+        "dedupe:ex3": "certified"
+      },
+      "postVerdicts": {
+        "dedupe:ex0": "certified",
+        "dedupe:ex1": "certified",
+        "dedupe:ex2": "certified",
+        "dedupe:ex3": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "dedupe:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "dedupe:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "dedupe:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "dedupe:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "spec": "dedupe",
+      "model": "gpt-4o",
+      "kappa": true,
+      "preVerdicts": {
+        "dedupe:ex0": "certified",
+        "dedupe:ex1": "certified",
+        "dedupe:ex2": "certified",
+        "dedupe:ex3": "certified"
+      },
+      "postVerdicts": {
+        "dedupe:ex0": "certified",
+        "dedupe:ex1": "certified",
+        "dedupe:ex2": "certified",
+        "dedupe:ex3": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "dedupe:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "dedupe:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "dedupe:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "dedupe:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "spec": "clamp",
+      "model": "gpt-4o-mini",
+      "kappa": true,
+      "preVerdicts": {
+        "clamp:ex0": "certified",
+        "clamp:ex1": "certified",
+        "clamp:ex2": "certified",
+        "clamp:ex3": "certified"
+      },
+      "postVerdicts": {
+        "clamp:ex0": "certified",
+        "clamp:ex1": "certified",
+        "clamp:ex2": "certified",
+        "clamp:ex3": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "clamp:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "clamp:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "clamp:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "clamp:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "clamp",
+      "model": "gemini-2.5-flash",
+      "kappa": true,
+      "preVerdicts": {
+        "clamp:ex0": "certified",
+        "clamp:ex1": "certified",
+        "clamp:ex2": "certified",
+        "clamp:ex3": "certified"
+      },
+      "postVerdicts": {
+        "clamp:ex0": "certified",
+        "clamp:ex1": "certified",
+        "clamp:ex2": "certified",
+        "clamp:ex3": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "clamp:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "clamp:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "clamp:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "clamp:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          false,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "spec": "clamp",
+      "model": "gpt-4o",
+      "kappa": true,
+      "preVerdicts": {
+        "clamp:ex0": "certified",
+        "clamp:ex1": "certified",
+        "clamp:ex2": "certified",
+        "clamp:ex3": "certified"
+      },
+      "postVerdicts": {
+        "clamp:ex0": "certified",
+        "clamp:ex1": "certified",
+        "clamp:ex2": "certified",
+        "clamp:ex3": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "clamp:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "clamp:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "clamp:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "clamp:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "spec": "rle",
+      "model": "gpt-4o-mini",
+      "kappa": true,
+      "preVerdicts": {
+        "rle:ex0": "certified",
+        "rle:ex1": "certified",
+        "rle:ex2": "certified",
+        "rle:ex3": "certified",
+        "rle:ex4": "certified"
+      },
+      "postVerdicts": {
+        "rle:ex0": "certified",
+        "rle:ex1": "certified",
+        "rle:ex2": "certified",
+        "rle:ex3": "certified",
+        "rle:ex4": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "rle:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "rle",
+      "model": "gemini-2.5-flash",
+      "kappa": true,
+      "preVerdicts": {
+        "rle:ex0": "certified",
+        "rle:ex1": "certified",
+        "rle:ex2": "certified",
+        "rle:ex3": "certified",
+        "rle:ex4": "certified"
+      },
+      "postVerdicts": {
+        "rle:ex0": "certified",
+        "rle:ex1": "certified",
+        "rle:ex2": "certified",
+        "rle:ex3": "certified",
+        "rle:ex4": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "rle:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "spec": "rle",
+      "model": "gpt-4o",
+      "kappa": true,
+      "preVerdicts": {
+        "rle:ex0": "certified",
+        "rle:ex1": "certified",
+        "rle:ex2": "certified",
+        "rle:ex3": "certified",
+        "rle:ex4": "certified"
+      },
+      "postVerdicts": {
+        "rle:ex0": "certified",
+        "rle:ex1": "certified",
+        "rle:ex2": "certified",
+        "rle:ex3": "certified",
+        "rle:ex4": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "rle:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "rle:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "spec": "ordinal",
+      "model": "gpt-4o-mini",
+      "kappa": true,
+      "preVerdicts": {
+        "ordinal:ex0": "certified",
+        "ordinal:ex1": "certified",
+        "ordinal:ex2": "certified",
+        "ordinal:ex3": "certified",
+        "ordinal:ex4": "certified",
+        "ordinal:ex5": "certified",
+        "ordinal:ex6": "certified",
+        "ordinal:ex7": "certified",
+        "ordinal:ex8": "certified"
+      },
+      "postVerdicts": {
+        "ordinal:ex0": "certified",
+        "ordinal:ex1": "certified",
+        "ordinal:ex2": "certified",
+        "ordinal:ex3": "certified",
+        "ordinal:ex4": "certified",
+        "ordinal:ex5": "certified",
+        "ordinal:ex6": "certified",
+        "ordinal:ex7": "certified",
+        "ordinal:ex8": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "ordinal:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex5",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex6",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex7",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex8",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "ordinal",
+      "model": "gemini-2.5-flash",
+      "kappa": true,
+      "preVerdicts": {
+        "ordinal:ex0": "certified",
+        "ordinal:ex1": "certified",
+        "ordinal:ex2": "certified",
+        "ordinal:ex3": "certified",
+        "ordinal:ex4": "certified",
+        "ordinal:ex5": "certified",
+        "ordinal:ex6": "certified",
+        "ordinal:ex7": "certified",
+        "ordinal:ex8": "certified"
+      },
+      "postVerdicts": {
+        "ordinal:ex0": "certified",
+        "ordinal:ex1": "certified",
+        "ordinal:ex2": "certified",
+        "ordinal:ex3": "certified",
+        "ordinal:ex4": "certified",
+        "ordinal:ex5": "certified",
+        "ordinal:ex6": "certified",
+        "ordinal:ex7": "certified",
+        "ordinal:ex8": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "ordinal:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex5",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex6",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex7",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex8",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "ordinal",
+      "model": "gpt-4o",
+      "kappa": true,
+      "preVerdicts": {
+        "ordinal:ex0": "certified",
+        "ordinal:ex1": "certified",
+        "ordinal:ex2": "certified",
+        "ordinal:ex3": "certified",
+        "ordinal:ex4": "certified",
+        "ordinal:ex5": "certified",
+        "ordinal:ex6": "certified",
+        "ordinal:ex7": "certified",
+        "ordinal:ex8": "certified"
+      },
+      "postVerdicts": {
+        "ordinal:ex0": "certified",
+        "ordinal:ex1": "certified",
+        "ordinal:ex2": "certified",
+        "ordinal:ex3": "certified",
+        "ordinal:ex4": "certified",
+        "ordinal:ex5": "certified",
+        "ordinal:ex6": "certified",
+        "ordinal:ex7": "certified",
+        "ordinal:ex8": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "ordinal:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex5",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex6",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex7",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "ordinal:ex8",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "truncate",
+      "model": "gpt-4o-mini",
+      "kappa": true,
+      "preVerdicts": {
+        "truncate:ex0": "certified",
+        "truncate:ex1": "certified",
+        "truncate:ex2": "certified",
+        "truncate:ex3": "certified",
+        "truncate:ex4": "certified"
+      },
+      "postVerdicts": {
+        "truncate:ex0": "certified",
+        "truncate:ex1": "certified",
+        "truncate:ex2": "certified",
+        "truncate:ex3": "certified",
+        "truncate:ex4": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "truncate:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "truncate",
+      "model": "gemini-2.5-flash",
+      "kappa": true,
+      "preVerdicts": {
+        "truncate:ex0": "certified",
+        "truncate:ex1": "certified",
+        "truncate:ex2": "certified",
+        "truncate:ex3": "certified",
+        "truncate:ex4": "certified"
+      },
+      "postVerdicts": {
+        "truncate:ex0": "certified",
+        "truncate:ex1": "certified",
+        "truncate:ex2": "certified",
+        "truncate:ex3": "certified",
+        "truncate:ex4": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "truncate:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "truncate",
+      "model": "gpt-4o",
+      "kappa": true,
+      "preVerdicts": {
+        "truncate:ex0": "certified",
+        "truncate:ex1": "certified",
+        "truncate:ex2": "certified",
+        "truncate:ex3": "certified",
+        "truncate:ex4": "certified"
+      },
+      "postVerdicts": {
+        "truncate:ex0": "certified",
+        "truncate:ex1": "certified",
+        "truncate:ex2": "certified",
+        "truncate:ex3": "certified",
+        "truncate:ex4": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "truncate:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex3",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "truncate:ex4",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": {
+        "runs": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "spec": "weekday",
+      "model": "gpt-4o-mini",
+      "kappa": true,
+      "preVerdicts": {
+        "weekday:ex0": "certified",
+        "weekday:ex1": "certified",
+        "weekday:ex2": "certified",
+        "weekday:fin": "certified"
+      },
+      "postVerdicts": {
+        "weekday:ex0": "certified",
+        "weekday:ex1": "certified",
+        "weekday:ex2": "certified",
+        "weekday:fin": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "weekday:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "weekday:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "weekday:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": null
+    },
+    {
+      "spec": "weekday",
+      "model": "gemini-2.5-flash",
+      "kappa": true,
+      "preVerdicts": {
+        "weekday:ex0": "certified",
+        "weekday:ex1": "certified",
+        "weekday:ex2": "certified",
+        "weekday:fin": "certified"
+      },
+      "postVerdicts": {
+        "weekday:ex0": "certified",
+        "weekday:ex1": "certified",
+        "weekday:ex2": "certified",
+        "weekday:fin": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "weekday:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "weekday:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "weekday:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": null
+    },
+    {
+      "spec": "weekday",
+      "model": "gpt-4o",
+      "kappa": true,
+      "preVerdicts": {
+        "weekday:ex0": "certified",
+        "weekday:ex1": "certified",
+        "weekday:ex2": "certified",
+        "weekday:fin": "certified"
+      },
+      "postVerdicts": {
+        "weekday:ex0": "certified",
+        "weekday:ex1": "certified",
+        "weekday:ex2": "certified",
+        "weekday:fin": "certified"
+      },
+      "repaired": false,
+      "jrows": [
+        {
+          "id": "weekday:ex0",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "weekday:ex1",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "weekday:ex2",
+          "gt": true,
+          "runs": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "uni": null
+    }
+  ]
+}

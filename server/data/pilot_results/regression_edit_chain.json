@@ -1,0 +1,43 @@
+{
+  "C0": [
+    "reach:list",
+    "reach:detail",
+    "reach:form",
+    "reach:done",
+    "trans:cmp-to-detail->detail",
+    "trans:cmp-to-form-new->form",
+    "trans:cmp-to-form-edit->form",
+    "trans:cmp-submit-form->done",
+    "trans:cmp-cancel-form->list",
+    "trans:cmp-to-list-from-done->list"
+  ],
+  "traj": [
+    {
+      "name": "e1 restyle (dark theme)",
+      "kappa": true,
+      "preserved": 10,
+      "regressed": []
+    },
+    {
+      "name": "e2 NAV REDESIGN (forgetting stress)",
+      "kappa": true,
+      "preserved": 10,
+      "regressed": []
+    },
+    {
+      "name": "e3 add banner to done",
+      "kappa": true,
+      "preserved": 10,
+      "regressed": []
+    },
+    {
+      "name": "e4 CONTROLLED regression inject",
+      "kappa": true,
+      "preserved": 8,
+      "regressed": [
+        "trans:cmp-to-detail->detail",
+        "trans:cmp-to-form-new->form"
+      ]
+    }
+  ]
+}

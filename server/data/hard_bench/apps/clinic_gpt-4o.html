@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinic Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      .hidden { display: none; }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Doctors Screen -->
+    <div data-screen-id="doctors" class="p-4">
+      <h1 class="text-2xl font-bold mb-4">Choose a Doctor</h1>
+      <ul>
+        <li><a href="#slot" data-component-id="cmp-pick-doctor" class="block p-2 bg-white shadow mb-2">Doctor 1</a></li>
+        <li><a href="#slot" data-component-id="cmp-pick-doctor" class="block p-2 bg-white shadow mb-2">Doctor 2</a></li>
+        <li><a href="#slot" data-component-id="cmp-pick-doctor" class="block p-2 bg-white shadow mb-2">Doctor 3</a></li>
+        <li><a href="#slot" data-component-id="cmp-pick-doctor" class="block p-2 bg-white shadow mb-2">Doctor 4</a></li>
+      </ul>
+    </div>
+
+    <!-- Slot Screen -->
+    <div data-screen-id="slot" class="p-4 hidden">
+      <h1 class="text-2xl font-bold mb-4">Select a Time</h1>
+      <ul>
+        <li><a href="#patient" data-component-id="cmp-pick-slot" class="block p-2 bg-white shadow mb-2">09:00 AM</a></li>
+        <li><a href="#patient" data-component-id="cmp-pick-slot" class="block p-2 bg-white shadow mb-2">10:00 AM</a></li>
+        <li><a href="#patient" data-component-id="cmp-pick-slot" class="block p-2 bg-white shadow mb-2">11:00 AM</a></li>
+        <li><a href="#patient" data-component-id="cmp-pick-slot" class="block p-2 bg-white shadow mb-2">12:00 PM</a></li>
+      </ul>
+    </div>
+
+    <!-- Patient Info Screen -->
+    <div data-screen-id="patient" class="p-4 hidden">
+      <h1 class="text-2xl font-bold mb-4">Patient Information</h1>
+      <form id="patient-form">
+        <div class="mb-4">
+          <label class="block mb-1">Name</label>
+          <input type="text" data-field-id="fld-pname" required class="w-full p-2 border" />
+        </div>
+        <div class="mb-4">
+          <label class="block mb-1">Phone</label>
+          <input type="tel" data-field-id="fld-phone" required class="w-full p-2 border" />
+        </div>
+        <div class="mb-4">
+          <label class="block mb-1">Insurance ID</label>
+          <input type="text" data-field-id="fld-insurance" required class="w-full p-2 border" />
+        </div>
+        <div class="flex justify-between">
+          <a href="#slot" data-component-id="cmp-back-slot" class="text-blue-500">Back</a>
+          <button type="submit" data-component-id="cmp-patient-next" class="bg-blue-500 text-white px-4 py-2">Next</button>
+        </div>
+      </form>
+      <div data-error-id="err-patient" class="text-red-500 mt-4 hidden">Please fill all required fields.</div>
+    </div>
+
+    <!-- Confirm Screen -->
+    <div data-screen-id="confirm" class="p-4 hidden">
+      <h1 class="text-2xl font-bold mb-4">Confirm Booking</h1>
+      <button data-component-id="cmp-confirm-book" class="bg-green-500 text-white px-4 py-2"><a href="#booked">Confirm</a></button>
+    </div>
+
+    <!-- Booked Screen -->
+    <div data-screen-id="booked" class="p-4 hidden">
+      <h1 class="text-2xl font-bold mb-4">Booking Confirmed</h1>
+      <p>Your appointment has been successfully booked.</p>
+    </div>
+
+    <script>
+      (() => {
+        const applyFromHash = () => {
+          const screens = Array.from(document.querySelectorAll("[data-screen-id]"));
+          if (!screens.length) return;
+
+          const hash = window.location.hash.replace(/^#/, "");
+          const targetId = hash || screens[0].dataset.screenId;
+
+          screens.forEach((el) => {
+            const isActive = el.dataset.screenId === targetId;
+            el.style.display = isActive ? "block" : "none";
+            el.classList.toggle("hidden", !isActive);
+          });
+        };
+
+        window.addEventListener("hashchange", applyFromHash);
+        window.addEventListener("DOMContentLoaded", applyFromHash);
+
+        document.getElementById("patient-form").addEventListener("submit", function(event) {
+          event.preventDefault();
+          const fields = ["fld-pname", "fld-phone", "fld-insurance"];
+          let allFilled = true;
+
+          fields.forEach(fieldId => {
+            const field = document.querySelector(`[data-field-id="${fieldId}"]`);
+            if (!field.value.trim()) {
+              allFilled = false;
+            }
+          });
+
+          const errorElement = document.querySelector("[data-error-id='err-patient']");
+          if (allFilled) {
+            window.location.hash = "confirm";
+            errorElement.classList.add("hidden");
+          } else {
+            errorElement.classList.remove("hidden");
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

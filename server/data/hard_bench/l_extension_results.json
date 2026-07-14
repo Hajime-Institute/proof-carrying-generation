@@ -1,0 +1,33 @@
+{
+  "oracle": "accessibility-tree (Playwright a11y snapshot)",
+  "runs": 3,
+  "results": [
+    {
+      "id": "a11y-name",
+      "desc": "primary action exposes an accessible name (\"Place order\")",
+      "baseL": "out-of-fragment",
+      "baseNote": "raw visible text = \"\" (base L cannot compute the accessible name)",
+      "extVerdict": "certified",
+      "deterministic": "3/3",
+      "witness": "getByRole(button, name=/place order/i) -> 1"
+    },
+    {
+      "id": "a11y-label",
+      "desc": "amount field has an associated accessible label",
+      "baseL": "out-of-fragment",
+      "baseNote": "label association (for/id, aria-labelledby) is not a raw attribute-equality predicate",
+      "extVerdict": "certified",
+      "deterministic": "3/3",
+      "witness": "getByLabel(/amount/i) -> 1"
+    },
+    {
+      "id": "a11y-alert",
+      "desc": "validation error is programmatically announced (role=alert)",
+      "baseL": "out-of-fragment",
+      "baseNote": "the announced-role (role=alert) semantics is an a11y-tree property, not DOM text",
+      "extVerdict": "certified",
+      "deterministic": "3/3",
+      "witness": "after empty submit, getByRole(alert) -> 1"
+    }
+  ]
+}

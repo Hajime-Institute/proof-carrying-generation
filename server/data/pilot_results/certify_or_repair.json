@@ -1,0 +1,57 @@
+{
+  "app": "会議室予約システム",
+  "screens": [
+    "list",
+    "detail",
+    "form",
+    "done"
+  ],
+  "comps": [
+    {
+      "id": "cmp-to-detail",
+      "owner": "list",
+      "target": "detail"
+    },
+    {
+      "id": "cmp-to-form-new",
+      "owner": "list",
+      "target": "form"
+    },
+    {
+      "id": "cmp-to-form-edit",
+      "owner": "detail",
+      "target": "form"
+    },
+    {
+      "id": "cmp-submit-reservation",
+      "owner": "form",
+      "target": "done"
+    },
+    {
+      "id": "cmp-cancel-reservation",
+      "owner": "detail",
+      "target": null
+    },
+    {
+      "id": "cmp-to-list-from-done",
+      "owner": "done",
+      "target": "list"
+    }
+  ],
+  "trajectory": [
+    {
+      "iter": 0,
+      "kappa": true,
+      "certified": 6,
+      "refuted": 3,
+      "oof": 1
+    },
+    {
+      "iter": 1,
+      "kappa": true,
+      "certified": 9,
+      "refuted": 0,
+      "oof": 1
+    }
+  ]
+}

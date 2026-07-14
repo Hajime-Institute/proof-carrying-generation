@@ -1,0 +1,821 @@
+{
+  "model": "gemini-2.5-flash",
+  "runsPerObligation": 3,
+  "nObligations": 50,
+  "staticJudge": {
+    "accuracy": "26/50",
+    "falseCertifyOnBroken": "5/15",
+    "inconsistent": "9/50"
+  },
+  "twoFrameJudge": {
+    "accuracy": "47/50",
+    "falseCertifyOnBroken": "0/15",
+    "inconsistent": "2/50"
+  },
+  "certificate": {
+    "accuracy": "50/50",
+    "inconsistent": "0/50"
+  },
+  "records": [
+    {
+      "app": "reservation",
+      "ver": "natural",
+      "id": "cmp-to-detail",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "reservation",
+      "ver": "natural",
+      "id": "cmp-to-form",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "reservation",
+      "ver": "natural",
+      "id": "cmp-confirm",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "reservation",
+      "ver": "natural",
+      "id": "cmp-cancel",
+      "works": true,
+      "staticRuns": [
+        false,
+        true,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "reservation",
+      "ver": "natural",
+      "id": "cmp-home",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "reservation",
+      "ver": "faulted",
+      "id": "cmp-to-detail",
+      "works": false,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "reservation",
+      "ver": "faulted",
+      "id": "cmp-to-form",
+      "works": false,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "reservation",
+      "ver": "faulted",
+      "id": "cmp-confirm",
+      "works": false,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "reservation",
+      "ver": "faulted",
+      "id": "cmp-cancel",
+      "works": true,
+      "staticRuns": [
+        true,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "reservation",
+      "ver": "faulted",
+      "id": "cmp-home",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "ticket",
+      "ver": "natural",
+      "id": "cmp-to-detail",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "ticket",
+      "ver": "natural",
+      "id": "cmp-to-reply",
+      "works": true,
+      "staticRuns": [
+        true,
+        false,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "ticket",
+      "ver": "natural",
+      "id": "cmp-send",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "ticket",
+      "ver": "natural",
+      "id": "cmp-back",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "ticket",
+      "ver": "natural",
+      "id": "cmp-home",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "ticket",
+      "ver": "faulted",
+      "id": "cmp-to-detail",
+      "works": false,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "ticket",
+      "ver": "faulted",
+      "id": "cmp-to-reply",
+      "works": false,
+      "staticRuns": [
+        false,
+        false,
+        true
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "ticket",
+      "ver": "faulted",
+      "id": "cmp-send",
+      "works": false,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "ticket",
+      "ver": "faulted",
+      "id": "cmp-back",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "ticket",
+      "ver": "faulted",
+      "id": "cmp-home",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "event",
+      "ver": "natural",
+      "id": "cmp-to-detail",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "event",
+      "ver": "natural",
+      "id": "cmp-to-register",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "event",
+      "ver": "natural",
+      "id": "cmp-submit",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "event",
+      "ver": "natural",
+      "id": "cmp-cancel",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "event",
+      "ver": "natural",
+      "id": "cmp-home",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "event",
+      "ver": "faulted",
+      "id": "cmp-to-detail",
+      "works": false,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "event",
+      "ver": "faulted",
+      "id": "cmp-to-register",
+      "works": false,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "event",
+      "ver": "faulted",
+      "id": "cmp-submit",
+      "works": false,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "event",
+      "ver": "faulted",
+      "id": "cmp-cancel",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "event",
+      "ver": "faulted",
+      "id": "cmp-home",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "catalog",
+      "ver": "natural",
+      "id": "cmp-to-detail",
+      "works": true,
+      "staticRuns": [
+        false,
+        true,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "catalog",
+      "ver": "natural",
+      "id": "cmp-to-cart",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "catalog",
+      "ver": "natural",
+      "id": "cmp-checkout",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "catalog",
+      "ver": "natural",
+      "id": "cmp-continue",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "catalog",
+      "ver": "natural",
+      "id": "cmp-home",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "catalog",
+      "ver": "faulted",
+      "id": "cmp-to-detail",
+      "works": false,
+      "staticRuns": [
+        false,
+        false,
+        true
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "catalog",
+      "ver": "faulted",
+      "id": "cmp-to-cart",
+      "works": false,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "catalog",
+      "ver": "faulted",
+      "id": "cmp-checkout",
+      "works": false,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "catalog",
+      "ver": "faulted",
+      "id": "cmp-continue",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "catalog",
+      "ver": "faulted",
+      "id": "cmp-home",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "directory",
+      "ver": "natural",
+      "id": "cmp-to-detail",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "directory",
+      "ver": "natural",
+      "id": "cmp-to-edit",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "directory",
+      "ver": "natural",
+      "id": "cmp-save",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "directory",
+      "ver": "natural",
+      "id": "cmp-cancel",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "directory",
+      "ver": "natural",
+      "id": "cmp-home",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "directory",
+      "ver": "faulted",
+      "id": "cmp-to-detail",
+      "works": false,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "directory",
+      "ver": "faulted",
+      "id": "cmp-to-edit",
+      "works": false,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "directory",
+      "ver": "faulted",
+      "id": "cmp-save",
+      "works": false,
+      "staticRuns": [
+        false,
+        false,
+        false
+      ],
+      "twoFrameRuns": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "app": "directory",
+      "ver": "faulted",
+      "id": "cmp-cancel",
+      "works": true,
+      "staticRuns": [
+        false,
+        false,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "directory",
+      "ver": "faulted",
+      "id": "cmp-home",
+      "works": true,
+      "staticRuns": [
+        true,
+        true,
+        true
+      ],
+      "twoFrameRuns": [
+        true,
+        true,
+        true
+      ]
+    }
+  ]
+}

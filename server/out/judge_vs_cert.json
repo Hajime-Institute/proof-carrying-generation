@@ -1,0 +1,329 @@
+{
+  "model": "gemini-2.5-flash",
+  "runsPerObligation": 4,
+  "versions": {
+    "natural": [
+      {
+        "id": "cmp-to-detail",
+        "owner": "list",
+        "target": "detail",
+        "groundTruthWorks": true,
+        "staticRuns": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "staticTexts": [
+          "YES, the \"View Details\" control",
+          "YES, the \"View Details\" control",
+          "YES, the \"View Details\" control",
+          "YES, the \"View Details\" link"
+        ],
+        "twoFrameRuns": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "twoFrameTexts": [
+          "YES, the screen content has",
+          "YES, the app has navigated to",
+          "YES, the app has navigated",
+          "YES, the app has clearly"
+        ]
+      },
+      {
+        "id": "cmp-to-form",
+        "owner": "detail",
+        "target": "form",
+        "groundTruthWorks": true,
+        "staticRuns": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "staticTexts": [
+          "NO, the button text",
+          "YES, the button \"",
+          "NO, the control says \"Reserve",
+          "NO, the screenshot does not"
+        ],
+        "twoFrameRuns": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "twoFrameTexts": [
+          "YES, the screen title has changed to",
+          "YES, the app has navigated to",
+          "YES, the screen title has changed to",
+          "YES, the screen title"
+        ]
+      },
+      {
+        "id": "cmp-confirm",
+        "owner": "form",
+        "target": "done",
+        "groundTruthWorks": true,
+        "staticRuns": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "staticTexts": [
+          "NO, the \"Confirm the reservation\"",
+          "NO, there is no",
+          "NO, the \"Confirm",
+          "NO, the \"Confirm"
+        ],
+        "twoFrameRuns": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "twoFrameTexts": [
+          "YES, the app has",
+          "YES, the app has navigated",
+          "YES, the app has navigated",
+          "YES, the app has"
+        ]
+      },
+      {
+        "id": "cmp-cancel",
+        "owner": "form",
+        "target": "detail",
+        "groundTruthWorks": true,
+        "staticRuns": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "staticTexts": [
+          "NO, the screenshot does not provide enough",
+          "NO, the screenshot does not provide enough",
+          "NO, the screenshot does not provide enough",
+          "NO, the screenshot does not provide"
+        ],
+        "twoFrameRuns": [
+          false,
+          false,
+          false,
+          true
+        ],
+        "twoFrameTexts": [
+          "NO, the app has navigated to a",
+          "NO, the app navigated to a",
+          "NO, the app navigated to a room",
+          "YES, the app has navigated to"
+        ]
+      },
+      {
+        "id": "cmp-home",
+        "owner": "done",
+        "target": "list",
+        "groundTruthWorks": true,
+        "staticRuns": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "staticTexts": [
+          "YES, the label on the control explicitly",
+          "YES, the \"Back to Room",
+          "YES, the control's label clearly",
+          "YES, the control's label clearly"
+        ],
+        "twoFrameRuns": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "twoFrameTexts": [
+          "YES, the app has navigated to",
+          "YES, the app has navigated from",
+          "YES, the app has navigated to a",
+          "YES, the app has navigated to"
+        ]
+      }
+    ],
+    "faulted": [
+      {
+        "id": "cmp-to-detail",
+        "owner": "list",
+        "target": "detail",
+        "groundTruthWorks": true,
+        "staticRuns": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "staticTexts": [
+          "YES, the \"View Details\" control",
+          "YES, the \"View Details",
+          "YES, the \"View",
+          "YES, the \"View Details"
+        ],
+        "twoFrameRuns": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "twoFrameTexts": [
+          "YES, the app has navigated to a",
+          "YES, the app has",
+          "YES, the app has navigated",
+          "YES, the app has"
+        ]
+      },
+      {
+        "id": "cmp-to-form",
+        "owner": "detail",
+        "target": "form",
+        "groundTruthWorks": false,
+        "staticRuns": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "staticTexts": [
+          "YES, the button \"Reserve",
+          "YES, the \"Reserve This Space\"",
+          "YES, the control's text",
+          "YES, the \"Reserve This Space\""
+        ],
+        "twoFrameRuns": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "twoFrameTexts": [
+          "NO, the screen content remains identical.",
+          "NO, the screen content remains identical",
+          "NO, the app has",
+          "NO, the screen content remains identical."
+        ]
+      },
+      {
+        "id": "cmp-confirm",
+        "owner": "form",
+        "target": "done",
+        "groundTruthWorks": false,
+        "staticRuns": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "staticTexts": [
+          "NO, the \"Confirm the",
+          "NO, the \"Confirm the reservation\"",
+          "NO, the \"Confirm",
+          "NO, the \"Confirm the reservation"
+        ],
+        "twoFrameRuns": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "twoFrameTexts": [
+          "NO, the required fields are",
+          "NO, the app has not",
+          "NO, the app remains",
+          "NO, the app has"
+        ]
+      },
+      {
+        "id": "cmp-cancel",
+        "owner": "form",
+        "target": "detail",
+        "groundTruthWorks": true,
+        "staticRuns": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "staticTexts": [
+          "NO, the \"Cancel",
+          "NO, the \"Cancel and go back",
+          "NO, the \"Cancel and go back",
+          "NO, the \"Cancel and"
+        ],
+        "twoFrameRuns": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "twoFrameTexts": [
+          "NO, the \"Cancel",
+          "NO, the \"Cancel and go back",
+          "NO, the \"Cancel and",
+          "NO, the \"Cancel and go"
+        ]
+      },
+      {
+        "id": "cmp-home",
+        "owner": "done",
+        "target": "list",
+        "groundTruthWorks": false,
+        "staticRuns": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "staticTexts": [
+          "YES, the control's",
+          "YES, the control's label clearly",
+          "YES, the control'",
+          "YES, the button's label clearly"
+        ],
+        "twoFrameRuns": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "twoFrameTexts": [
+          "NO, the app screen has",
+          "NO, the screen content",
+          "NO, the screen content remains the",
+          "NO, the screen has not"
+        ]
+      }
+    ]
+  },
+  "metrics": {
+    "staticJudge": {
+      "accuracy": "4/10",
+      "falseCertifyOnBroken": "2/3",
+      "inconsistent": "1/10",
+      "abstained": "0/10"
+    },
+    "twoFrameJudge": {
+      "accuracy": "8/10",
+      "falseCertifyOnBroken": "0/3",
+      "inconsistent": "1/10",
+      "abstained": "0/10"
+    },
+    "certificate": {
+      "accuracy": "10/10",
+      "inconsistent": "0/10",
+      "replayable": true
+    }
+  }
+}

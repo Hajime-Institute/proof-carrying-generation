@@ -1,0 +1,46 @@
+{
+  "_provenance": "GROUNDED IN A COMMITTED, REPRODUCIBLE RUN — server/data/edf_corpus/ holds the 8 spec_*.md and the full per-obligation dump (obligations.json) this breakdown is computed from, produced by pilot/A-proof-carrying-ui/edf_coverage.mjs (gemini-2.5-flash, transparent rule-based classifier). Re-running regenerates specs stochastically and lands near, not exactly on, these counts; this file records ONE committed run. lib/coverage.mjs asserts internal consistency at boot.",
+  "grounded": true,
+  "specsCount": 8,
+  "generator": "gemini-2.5-flash (structured, ID-anchored specs; thinking disabled)",
+  "aggregate": {
+    "edf": 126,
+    "total": 153,
+    "coverage": 0.8235,
+    "coveragePct": "82.4%"
+  },
+  "byKind": {
+    "edf": [
+      { "kind": "transition",       "count": 46 },
+      { "kind": "dom-validation",   "count": 41 },
+      { "kind": "screen-reachable", "count": 27 },
+      { "kind": "dom-effect",       "count": 12 }
+    ],
+    "edfSubtotal": 126,
+    "residual": [
+      { "kind": "subjective/underspecified", "count": 15 },
+      { "kind": "underspecified-effect",     "count": 12 }
+    ],
+    "residualSubtotal": 27,
+    "total": 153
+  },
+  "perSpec": {
+    "range": { "min": 0.57, "max": 1.0, "minPct": "57%", "maxPct": "100%" },
+    "named": [
+      { "spec": "meeting-room reservation", "coverage": 1.0,  "coveragePct": "100%", "edf": 17, "total": 17, "note": "obligations entirely reachability / transition / validation" },
+      { "spec": "help-desk ticketing",      "coverage": 0.95, "coveragePct": "95%",  "edf": 18, "total": 19 },
+      { "spec": "kanban task board",        "coverage": 0.94, "coveragePct": "94%",  "edf": 16, "total": 17 },
+      { "spec": "internal survey",          "coverage": 0.90, "coveragePct": "90%",  "edf": 19, "total": 21 },
+      { "spec": "inventory management",     "coverage": 0.82, "coveragePct": "82%",  "edf": 14, "total": 17 },
+      { "spec": "customer CRM",             "coverage": 0.81, "coveragePct": "81%",  "edf": 13, "total": 16 },
+      { "spec": "household budget",         "coverage": 0.68, "coveragePct": "68%",  "edf": 17, "total": 25, "note": "many under-specified monthly-aggregation effects" },
+      { "spec": "time-clock / attendance",  "coverage": 0.57, "coveragePct": "57%",  "edf": 12, "total": 21, "note": "largest share of under-specified / subjective effects" }
+    ],
+    "undisclosedSpecs": 0,
+    "note": "All 8 specs of the committed corpus are named with their exact coverage; the spec_*.md and obligations.json are in server/data/edf_corpus/ for audit."
+  },
+  "theoremMap": {
+    "note": "Residual kinds correspond to Theorem 1 case (c) — non-observable / under-determined effects (p not in L). Infinite-universal obligations (case (b)) did not arise in this 8-spec sample."
+  },
+  "caveat": "Rule-based first pass. No human-labeled ground truth and no inter-annotator-agreement study yet. Read 82.4% as the output of a transparent, auditable heuristic for sizing the certifiable fragment — not a validated measurement. Coverage is generator-dependent: the same classifier over gemini-3.5-flash specs yields ~99% (stronger generators emit fewer under-specified obligations), so the ~18% residual here is a property of this corpus, not a fixed constant. A camera-ready needs human labels + IAA (e.g. Cohen's kappa) over the obligations."
+}

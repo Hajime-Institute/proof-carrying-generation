@@ -1,0 +1,1251 @@
+{
+  "perSpec": [
+    {
+      "app": "タスク管理（カンバン）",
+      "total": 17,
+      "edf": 16,
+      "coverage": 0.94,
+      "screens": 3,
+      "comps": 9,
+      "vals": 5
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "total": 25,
+      "edf": 17,
+      "coverage": 0.68,
+      "screens": 3,
+      "comps": 10,
+      "vals": 12
+    },
+    {
+      "app": "会議室予約システム",
+      "total": 17,
+      "edf": 17,
+      "coverage": 1,
+      "screens": 4,
+      "comps": 7,
+      "vals": 6
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "total": 17,
+      "edf": 14,
+      "coverage": 0.82,
+      "screens": 3,
+      "comps": 8,
+      "vals": 6
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "total": 21,
+      "edf": 12,
+      "coverage": 0.57,
+      "screens": 3,
+      "comps": 8,
+      "vals": 10
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "total": 21,
+      "edf": 19,
+      "coverage": 0.9,
+      "screens": 4,
+      "comps": 10,
+      "vals": 7
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "total": 16,
+      "edf": 13,
+      "coverage": 0.81,
+      "screens": 3,
+      "comps": 9,
+      "vals": 4
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "total": 19,
+      "edf": 18,
+      "coverage": 0.95,
+      "screens": 4,
+      "comps": 9,
+      "vals": 6
+    }
+  ],
+  "aggregate": {
+    "total": 153,
+    "edf": 126,
+    "coverage": 0.8235294117647058
+  },
+  "allObligations": [
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "reachability",
+      "id": "board",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "カンバンボード"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "reachability",
+      "id": "taskdetail",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "タスク詳細"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "reachability",
+      "id": "taskcreate",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "タスク作成"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "component",
+      "id": "cmp-column",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "タスクカードのドロップ（ステータス変更）。"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "component",
+      "id": "cmp-taskcard",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック、ドラッグ＆ドロップ（タスクの移動）。"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "component",
+      "id": "cmp-addtaskbtn",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック。"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "component",
+      "id": "cmp-tasktitleinput",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "テキスト入力、フォーカスアウト（変更の自動保存または保存ボタンの活性化）。"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "component",
+      "id": "cmp-taskdescriptiontextarea",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "テキスト入力、フォーカスアウト（変更の自動保存または保存ボタンの活性化）。"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "component",
+      "id": "cmp-assigneedropdown",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "ドロップダウンからの選択。"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "component",
+      "id": "cmp-duedatepicker",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "日付の選択。"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "component",
+      "id": "cmp-deletetaskbtn",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック。"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "component",
+      "id": "cmp-savebtn",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック。"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**タスクタイトル未入力**: タスクタイトルが未入力の状態で保存しようとした場合、エラーメッセージ「タスクタイトルは必須です。」をタイトル"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**タスクタイトル文字数超過**: タスクタイトルが255文字を超えて入力された場合、エラーメッセージ「タスクタイトルは255文字以内で入力"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**期日不正**: 期日に過去の日付が選択された場合、エラーメッセージ「期日は今日以降の日付を選択してください。」を期日ピッカーの下に表示し"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**タスク削除確認**: タスク削除ボタン押下時、確認ダイアログ「このタスクを完全に削除しますか？この操作は元に戻せません。」を表示し、「キ"
+    },
+    {
+      "app": "タスク管理（カンバン）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**保存時のネットワークエラー**: タスクの保存処理中にネットワークエラーが発生した場合、画面上部にエラーメッセージ「保存に失敗しました。"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "reachability",
+      "id": "home",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "ホーム画面"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "reachability",
+      "id": "record",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "収支記録画面"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "reachability",
+      "id": "report",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "月次集計画面"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "component",
+      "id": "cmp-monthly-summary",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "なし"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "component",
+      "id": "cmp-add-button",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "component",
+      "id": "cmp-recent-list",
+      "edf": true,
+      "kind": "transition",
+      "text": "項目クリック"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "component",
+      "id": "cmp-date-picker",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "日付選択"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "component",
+      "id": "cmp-category-select",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "カテゴリ選択"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "component",
+      "id": "cmp-amount-input",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "数値入力"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "component",
+      "id": "cmp-type-toggle",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "収入/支出切り替え"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "component",
+      "id": "cmp-save-button",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "component",
+      "id": "cmp-month-selector",
+      "edf": true,
+      "kind": "transition",
+      "text": "月の選択（前月/次月、カレンダーアイコンからの選択）"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "component",
+      "id": "cmp-chart",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "グラフ要素クリック"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**金額入力欄が空の場合**:"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 保存ボタン押下時に「金額を入力してください」というエラーメッセージを金額入力欄の下に表示し、保存処理を中断します。"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**金額入力欄に数値以外の文字が入力された場合**:"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 入力時に数値以外の文字を自動削除するか、保存ボタン押下時に「金額は半角数字で入力してください」というエラーメッセージを表示し、保存処"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**金額に0以下の値が入力された場合**:"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 保存ボタン押下時に「金額は1以上の値を入力してください」というエラーメッセージを金額入力欄の下に表示し、保存処理を中断します。"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**カテゴリが未選択の場合**:"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 保存ボタン押下時に「カテゴリを選択してください」というエラーメッセージをカテゴリ選択欄の下に表示し、保存処理を中断します。"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**日付が未選択の場合**:"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 保存ボタン押下時に「日付を選択してください」というエラーメッセージを日付選択欄の下に表示し、保存処理を中断します。"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**記録保存時にサーバーエラーが発生した場合**:"
+    },
+    {
+      "app": "家計簿（収支記録・月次集計）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 画面上部に「記録の保存に失敗しました。時間をおいて再度お試しください。」というトーストメッセージを表示し、記録画面に留まります。"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "reachability",
+      "id": "login",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "ログイン画面"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "reachability",
+      "id": "roomlist",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "会議室一覧・検索画面"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "reachability",
+      "id": "booking",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "予約作成・詳細画面"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "reachability",
+      "id": "mybookings",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "マイ予約一覧画面"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "component",
+      "id": "cmp-login-form",
+      "edf": true,
+      "kind": "transition",
+      "text": "ユーザー名入力、パスワード入力、ログインボタンクリック"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "component",
+      "id": "cmp-search-form",
+      "edf": true,
+      "kind": "transition",
+      "text": "検索条件入力（日付ピッカー、時間選択、数値入力、チェックボックス）、検索ボタンクリック"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "component",
+      "id": "cmp-room-card",
+      "edf": true,
+      "kind": "transition",
+      "text": "会議室名/詳細ボタンクリック、予約可能時間帯クリック"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "component",
+      "id": "cmp-booking-form",
+      "edf": true,
+      "kind": "transition",
+      "text": "日時選択（開始・終了時刻）、会議目的テキスト入力、参加者追加（ユーザー検索・選択）、予約ボタンクリック"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "component",
+      "id": "cmp-confirm-button",
+      "edf": true,
+      "kind": "transition",
+      "text": "ボタンクリック"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "component",
+      "id": "cmp-mybooking-list",
+      "edf": true,
+      "kind": "transition",
+      "text": "各予約アイテムのクリック（詳細表示）、変更ボタンクリック、キャンセルボタンクリック"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "component",
+      "id": "cmp-action-buttons",
+      "edf": true,
+      "kind": "transition",
+      "text": "変更ボタンクリック、キャンセルボタンクリック"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**必須項目未入力**: フォーム送信時に必須項目（例: ログインID、パスワード、予約の開始/終了時刻、会議目的）が未入力の場合、該当入力"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**予約日時重複**: 選択した会議室が指定した時間帯に既に別の予約で埋まっている場合、予約ボタンクリック時に「指定された会議室は、この時間"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**過去の日時選択**: 予約作成時に現在時刻より前の日時を選択した場合、日時選択フィールドの近くに「過去の日時は選択できません。」というエ"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**予約期間外**: 予約可能な期間（例: 今日から3ヶ月先まで）を超えた日時を選択した場合、日時選択フィールドの近くに「予約は〇月〇日まで"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**認証情報不一致**: ログイン時にユーザー名またはパスワードがシステムに登録されている情報と一致しない場合、ログインフォームの下に「ユー"
+    },
+    {
+      "app": "会議室予約システム",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**会議室の収容人数超過**: 予約フォームで指定された参加人数が、選択された会議室の最大収容人数を超過している場合、参加人数入力フィールド"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "reachability",
+      "id": "list",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "商品一覧画面"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "reachability",
+      "id": "inout",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "入出庫画面"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "reachability",
+      "id": "detail",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "商品詳細/編集画面"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "component",
+      "id": "cmp-product-list",
+      "edf": true,
+      "kind": "transition",
+      "text": "・商品行タップ: 該当商品の詳細画面へ遷移<br>・入出庫アイコンタップ: 該当商品の入出庫画面へ遷移"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "component",
+      "id": "cmp-search-bar",
+      "edf": true,
+      "kind": "transition",
+      "text": "・検索キーワード入力: 入力内容に応じて商品リストをリアルタイムフィルタリング、または検索ボタン押下でフィルタリング<b"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "component",
+      "id": "cmp-add-button",
+      "edf": true,
+      "kind": "transition",
+      "text": "・ボタンクリック: 新規商品登録フォームのある detail 画面（新規モード）へ遷移"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "component",
+      "id": "cmp-inout-form",
+      "edf": true,
+      "kind": "transition",
+      "text": "・商品選択ドロップダウン変更: 選択された商品の現在の在庫数を表示<br>・数量入力: 数値入力<br>・入庫ボタンクリ"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "component",
+      "id": "cmp-product-selector",
+      "edf": true,
+      "kind": "transition",
+      "text": "・商品選択: 選択された商品のIDを取得し、フォームに反映"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "component",
+      "id": "cmp-product-detail-form",
+      "edf": true,
+      "kind": "transition",
+      "text": "・入力フィールド変更: 商品情報の編集"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "component",
+      "id": "cmp-save-button",
+      "edf": true,
+      "kind": "transition",
+      "text": "・ボタンクリック: 入力された情報を検証し、データベースに保存"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "component",
+      "id": "cmp-delete-button",
+      "edf": true,
+      "kind": "transition",
+      "text": "・ボタンクリック: 削除確認ダイアログ表示、ユーザーが承認後、商品をデータベースから削除"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**入出庫数量が0以下の場合**:"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 入力フィールドの下に「数量は1以上の値を入力してください。」というエラーメッセージを表示し、入出庫ボタンを非活性化する。"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**出庫時に現在の在庫数を超える数量が入力された場合**:"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 入力フィールドの下に「現在の在庫数を超える出庫はできません。（現在の在庫数: [現在の在庫数]）」というエラーメッセージを表示し、出"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**商品名が未入力の場合（新規登録・編集時）**:"
+    },
+    {
+      "app": "在庫管理（商品一覧・入出庫・検索）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 商品名入力フィールドの下に「商品名は必須項目です。」というエラーメッセージを表示し"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "reachability",
+      "id": "home",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "ホーム画面"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "reachability",
+      "id": "history",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "履歴画面"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "reachability",
+      "id": "profile",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "プロフィール画面"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "component",
+      "id": "cmp-current-time",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "なし"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "component",
+      "id": "cmp-punch-in-btn",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "タップ"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "component",
+      "id": "cmp-punch-out-btn",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "タップ"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "component",
+      "id": "cmp-status-display",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "なし"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "component",
+      "id": "cmp-history-link",
+      "edf": true,
+      "kind": "transition",
+      "text": "タップ"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "component",
+      "id": "cmp-profile-link",
+      "edf": true,
+      "kind": "transition",
+      "text": "タップ"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "component",
+      "id": "cmp-date-selector",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "日付/期間の選択"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "component",
+      "id": "cmp-history-list",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "なし"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**出勤済み状態での再出勤打刻:**"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 「既に出勤済みです。」というトーストメッセージを表示し、打刻処理は行わない。"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**未出勤状態での退勤打刻:**"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 「出勤打刻がされていません。」というトーストメッセージを表示し、打刻処理は行わない。"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**打刻API通信失敗:**"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: 「打刻に失敗しました。ネットワーク接続を確認してください。」というアラートダイアログを表示する。"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**打刻可能時間外:**"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: アプリケーションで設定された打刻可能時間外（例: 深夜2時から4時）に打刻を試みた場合、「現在、打刻可能な時間帯ではありません。」と"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**サーバーエラー:**"
+    },
+    {
+      "app": "勤怠打刻（出退勤・履歴）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "挙動: サーバー側で予期せぬエラーが発生した場合、「システムエラーが発生しました。時間をおいて再度お試しください。」というアラートダイアログ"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "reachability",
+      "id": "dashboard",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "アンケートダッシュボード"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "reachability",
+      "id": "create",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "アンケート作成"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "reachability",
+      "id": "answer",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "アンケート回答"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "reachability",
+      "id": "results",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "アンケート結果"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "component",
+      "id": "cmp-new-survey-button",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "component",
+      "id": "cmp-survey-list",
+      "edf": true,
+      "kind": "transition",
+      "text": "・アンケートタイトルクリック<br>・編集アイコンクリック<br>・結果アイコンクリック<br>・削除アイコンクリック"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "component",
+      "id": "cmp-question-editor",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "・質問タイプ選択（ドロップダウン）<br>・質問文入力（テキストエリア）<br>・選択肢追加/削除（ボタン）<br>・必"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "component",
+      "id": "cmp-add-question-button",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "クリック"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "component",
+      "id": "cmp-save-draft-button",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "component",
+      "id": "cmp-publish-button",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "component",
+      "id": "cmp-question-display",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "・ラジオボタン/チェックボックス選択<br>・テキスト入力（テキストフィールド）<br>・数値入力（数値フィールド）"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "component",
+      "id": "cmp-submit-answer-button",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "component",
+      "id": "cmp-result-chart",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "・グラフタイプ切り替え（棒グラフ、円グラフなど）<br>・データポイントへのマウスオーバー（詳細表示）"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "component",
+      "id": "cmp-export-button",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "クリック"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**アンケートタイトル未入力**: アンケート作成画面でタイトルが空のまま「公開」または「下書き保存」ボタンをクリックした場合、「アンケート"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**質問文未入力**: 質問作成時に質問文が空のまま「質問を追加」または「保存」しようとした場合、「質問文は必須です。」というエラーメッセー"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**選択肢未入力（複数選択/単一選択形式）**: 複数選択または単一選択形式の質問で、選択肢が1つも入力されていない状態で保存しようとした場"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**必須質問未回答**: アンケート回答画面で、必須として設定された質問に回答せずに「回答を送信」ボタンをクリックした場合、未回答の質問の横"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**回答形式の不一致（数値入力）**: 数値入力形式の質問に対し、数字以外の文字が入力された状態で「回答を送信」ボタンをクリックした場合、「"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**アンケート公開期間外での回答試行**: アンケートの公開期間外（開始前または終了後）に回答URLにアクセスした場合、「このアンケートは現"
+    },
+    {
+      "app": "社内アンケート作成・回答",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**アンケート作成時の質問数上限超過**: 1つのアンケートで設定できる質問数がシステムの上限（例: 50問）を超えようとした場合、「質問数"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "reachability",
+      "id": "customerList",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "顧客一覧画面"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "reachability",
+      "id": "customerDetail",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "顧客詳細画面"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "reachability",
+      "id": "customerEdit",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "顧客編集/新規作成画面"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "component",
+      "id": "cmp-search-input",
+      "edf": true,
+      "kind": "transition",
+      "text": "テキスト入力、Enterキー押下、検索ボタンクリック"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "component",
+      "id": "cmp-filter-dropdown",
+      "edf": true,
+      "kind": "transition",
+      "text": "ドロップダウン選択"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "component",
+      "id": "cmp-add-customer-btn",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "component",
+      "id": "cmp-customer-table",
+      "edf": true,
+      "kind": "transition",
+      "text": "行クリック、ヘッダークリック（ソート）"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "component",
+      "id": "cmp-edit-btn",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "component",
+      "id": "cmp-delete-btn",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "component",
+      "id": "cmp-customer-form",
+      "edf": true,
+      "kind": "dom-effect",
+      "text": "各入力フィールドへのテキスト入力、ラジオボタン/チェックボックス選択"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "component",
+      "id": "cmp-save-btn",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "component",
+      "id": "cmp-cancel-btn",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**必須項目未入力**:"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "フォーム送信時、未入力の必須項目には赤色の枠線と「この項目は必須です」というエラーメッセージが表示され、保存ボタンは非活性化されるか、クリッ"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "**メールアドレス形式不正**:"
+    },
+    {
+      "app": "顧客管理CRM（一覧・詳細・絞り込み）",
+      "type": "validation",
+      "edf": false,
+      "kind": "subjective/underspecified",
+      "text": "メールアドレス入力フィールドに正しい"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "reachability",
+      "id": "dashboard",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "ダッシュボード"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "reachability",
+      "id": "inquiry_list",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "問い合わせ一覧"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "reachability",
+      "id": "inquiry_detail",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "問い合わせ詳細"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "reachability",
+      "id": "inquiry_create",
+      "edf": true,
+      "kind": "screen-reachable",
+      "text": "問い合わせ作成"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "component",
+      "id": "cmp-summary-card",
+      "edf": true,
+      "kind": "transition",
+      "text": "クリック"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "component",
+      "id": "cmp-inquiry-table",
+      "edf": true,
+      "kind": "transition",
+      "text": "行クリック、ソートアイコンクリック"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "component",
+      "id": "cmp-filter-sort",
+      "edf": true,
+      "kind": "transition",
+      "text": "検索ボタンクリック、ドロップダウン選択、ソートアイコンクリック"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "component",
+      "id": "cmp-pagination",
+      "edf": true,
+      "kind": "transition",
+      "text": "ページ番号クリック、次/前ボタンクリック"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "component",
+      "id": "cmp-inquiry-details",
+      "edf": false,
+      "kind": "underspecified-effect",
+      "text": "なし"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "component",
+      "id": "cmp-status-update",
+      "edf": true,
+      "kind": "transition",
+      "text": "ステータス選択"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "component",
+      "id": "cmp-assignee-select",
+      "edf": true,
+      "kind": "transition",
+      "text": "担当者選択"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "component",
+      "id": "cmp-response-form",
+      "edf": true,
+      "kind": "transition",
+      "text": "「回答を送信」ボタンクリック"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "component",
+      "id": "cmp-inquiry-form",
+      "edf": true,
+      "kind": "transition",
+      "text": "「登録」ボタンクリック"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**必須項目未入力**: 問い合わせ作成フォームで「タイトル」や「内容」などの必須項目が未入力の場合、該当フィールドの下に赤字で「この項目は"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**メールアドレス形式不正**: 顧客情報のメールアドレス入力欄に無効な形式（例: `@`がない、ドメインがない）が入力された場合、フィール"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**文字数制限超過**: 問い合わせタイトルが指定された文字数（例: 100文字）を超過した場合、入力中にリアルタイムで残り文字数が表示され"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**添付ファイルサイズ超過**: 添付ファイルのアップロード時に、ファイルサイズが上限（例: 10MB）を超過した場合、アップロード処理が中"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**不正なステータス変更**: 既に「解決済み」となっている問い合わせを、直接「新規」に戻そうとした場合、操作はブロックされ、「このステータ"
+    },
+    {
+      "app": "ヘルプデスク問い合わせ管理",
+      "type": "validation",
+      "edf": true,
+      "kind": "dom-validation",
+      "text": "**担当者選択時の無効なユーザー**: 担当者選択ドロップダウンで、既に退職したなど無効なユーザーが選択されようとした場合、そのユーザーは選"
+    }
+  ]
+}

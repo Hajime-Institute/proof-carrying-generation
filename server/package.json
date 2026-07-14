@@ -1,0 +1,17 @@
+{
+  "name": "proof-carrying-generation-demo",
+  "private": true,
+  "type": "module",
+  "description": "NL -> web prototype + live, judge-free faithfulness certificate (demo issuer).",
+  "scripts": {
+    "start": "node server.mjs",
+    "capture": "node capture.mjs",
+    "figs": "FIGS_ONLY=1 node capture.mjs"
+  },
+  "dependencies": {
+    "ai": ">=4",
+    "@ai-sdk/google": ">=1",
+    "playwright": ">=1.40",
+    "node-html-parser": ">=6"
+  }
+}

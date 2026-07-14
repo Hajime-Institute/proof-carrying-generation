@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Transfer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      [data-error-id] {
+        display: none;
+        color: red;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <div data-screen-id="accounts" class="p-4">
+      <h1 class="text-xl font-bold">Accounts</h1>
+      <ul>
+        <li>Account 1: $1000</li>
+        <li>Account 2: $2000</li>
+        <li>Account 3: $1500</li>
+        <li>Account 4: $2500</li>
+      </ul>
+      <button data-component-id="cmp-open-transfer" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+        New Transfer
+      </button>
+      <button data-component-id="cmp-open-history" class="mt-4 bg-gray-500 text-white px-4 py-2 rounded">
+        Transaction History
+      </button>
+    </div>
+
+    <div data-screen-id="transfer" class="p-4 hidden">
+      <h1 class="text-xl font-bold">New Transfer</h1>
+      <form id="transferForm">
+        <div>
+          <label for="payee">Payee</label>
+          <input type="text" id="payee" data-field-id="fld-payee" required class="border p-2">
+        </div>
+        <div>
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" data-field-id="fld-amount" required class="border p-2">
+        </div>
+        <button type="submit" data-component-id="cmp-transfer-next" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+          Review Transfer
+        </button>
+      </form>
+      <div data-error-id="err-transfer">Please fill in all required fields.</div>
+    </div>
+
+    <div data-screen-id="confirm" class="p-4 hidden">
+      <h1 class="text-xl font-bold">Confirm Transfer</h1>
+      <button data-component-id="cmp-confirm-send" class="mt-4 bg-green-500 text-white px-4 py-2 rounded">
+        Send Transfer
+      </button>
+    </div>
+
+    <div data-screen-id="done" class="p-4 hidden">
+      <h1 class="text-xl font-bold">Sent</h1>
+      <p>Transfer successful!</p>
+      <button data-component-id="cmp-done-accounts" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+        Back to Accounts
+      </button>
+      <button data-component-id="cmp-apply-transfer" class="mt-4 bg-gray-500 text-white px-4 py-2 rounded">
+        Update Balance
+      </button>
+    </div>
+
+    <div data-screen-id="history" class="p-4 hidden">
+      <h1 class="text-xl font-bold">History</h1>
+      <ul>
+        <li>Transfer to Account 1: $100</li>
+        <li>Transfer to Account 2: $200</li>
+        <li>Transfer to Account 3: $150</li>
+        <li>Transfer to Account 4: $250</li>
+      </ul>
+    </div>
+
+    <div class="p-4">
+      <h2 class="text-lg font-bold">Current Balance: <span data-state-id="st-balance">1000</span></h2>
+    </div>
+
+    <script>
+      (() => {
+        const applyFromHash = () => {
+          const screens = Array.from(
+            document.querySelectorAll("[data-screen-id]")
+          );
+          if (!screens.length) return;
+
+          const hash = window.location.hash.replace(/^#/, "");
+          const targetId = hash || screens[0].dataset.screenId;
+
+          screens.forEach((el) => {
+            const isActive = el.dataset.screenId === targetId;
+            el.style.display = isActive ? "block" : "none";
+            el.classList.toggle("hidden", !isActive);
+          });
+        };
+
+        const transferForm = document.getElementById('transferForm');
+        transferForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const payee = document.querySelector('[data-field-id="fld-payee"]').value;
+          const amount = document.querySelector('[data-field-id="fld-amount"]').value;
+          const errorElement = document.querySelector('[data-error-id="err-transfer"]');
+          
+          if (!payee || !amount) {
+            errorElement.style.display = 'block';
+          } else {
+            errorElement.style.display = 'none';
+            window.location.hash = 'confirm';
+          }
+        });
+
+        document.querySelector('[data-component-id="cmp-apply-transfer"]').addEventListener('click', () => {
+          const balanceElement = document.querySelector('[data-state-id="st-balance"]');
+          const currentBalance = parseInt(balanceElement.textContent, 10);
+          const amount = parseInt(document.querySelector('[data-field-id="fld-amount"]').value, 10);
+          balanceElement.textContent = currentBalance - amount;
+        });
+
+        window.addEventListener("hashchange", applyFromHash);
+        window.addEventListener("DOMContentLoaded", applyFromHash);
+
+        document.querySelectorAll('[data-component-id]').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const target = e.currentTarget.getAttribute('data-component-id');
+            switch(target) {
+              case 'cmp-open-transfer':
+                window.location.hash = 'transfer';
+                break;
+              case 'cmp-open-history':
+                window.location.hash = 'history';
+                break;
+              case 'cmp-confirm-send':
+                window.location.hash = 'done';
+                break;
+              case 'cmp-done-accounts':
+                window.location.hash = 'accounts';
+                break;
+            }
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

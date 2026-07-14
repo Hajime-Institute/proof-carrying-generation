@@ -1,0 +1,444 @@
+[
+  {
+    "app": "Online Store",
+    "key": "store",
+    "model": "gemini-2.5-flash",
+    "tier": "mid",
+    "screens": 9,
+    "obligations": 24,
+    "refuted0": 0,
+    "refutedFinal": 0,
+    "recovered": 0,
+    "converged": true,
+    "traj": [
+      0
+    ]
+  },
+  {
+    "app": "Issue Tracker",
+    "key": "tracker",
+    "model": "gpt-4o-mini",
+    "tier": "weak",
+    "screens": 9,
+    "obligations": 24,
+    "refuted0": 6,
+    "refutedFinal": 0,
+    "recovered": 6,
+    "converged": true,
+    "traj": [
+      6,
+      0
+    ]
+  },
+  {
+    "app": "Issue Tracker",
+    "key": "tracker",
+    "model": "gemini-2.5-flash",
+    "tier": "mid",
+    "screens": 9,
+    "obligations": 24,
+    "refuted0": 0,
+    "refutedFinal": 0,
+    "recovered": 0,
+    "converged": true,
+    "traj": [
+      0
+    ]
+  },
+  {
+    "app": "Online Store",
+    "key": "store",
+    "model": "gpt-4o-mini",
+    "tier": "weak",
+    "screens": 9,
+    "obligations": 24,
+    "refuted0": 13,
+    "refutedFinal": 2,
+    "recovered": 11,
+    "converged": false,
+    "traj": [
+      13,
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "app": "Clinic Booking",
+    "key": "clinic",
+    "model": "gemini-2.5-flash",
+    "tier": "mid",
+    "screens": 9,
+    "obligations": 24,
+    "refuted0": 0,
+    "refutedFinal": 0,
+    "recovered": 0,
+    "converged": true,
+    "traj": [
+      0
+    ]
+  },
+  {
+    "app": "Clinic Booking",
+    "key": "clinic",
+    "model": "gpt-4o-mini",
+    "tier": "weak",
+    "screens": 9,
+    "obligations": 24,
+    "refuted0": 15,
+    "refutedFinal": 0,
+    "recovered": 15,
+    "converged": true,
+    "traj": [
+      15,
+      1,
+      0
+    ]
+  },
+  {
+    "app": "Restaurant Reservation",
+    "key": "gourmet",
+    "model": "gemini-2.5-flash",
+    "tier": "mid",
+    "screens": 8,
+    "obligations": 20,
+    "refuted0": 0,
+    "refutedFinal": 0,
+    "recovered": 0,
+    "converged": true,
+    "traj": [
+      0
+    ]
+  },
+  {
+    "app": "Real Estate Search",
+    "key": "realestate",
+    "model": "gpt-4o-mini",
+    "tier": "weak",
+    "screens": 8,
+    "obligations": 21,
+    "refuted0": 13,
+    "refutedFinal": 0,
+    "recovered": 13,
+    "converged": true,
+    "traj": [
+      13,
+      0
+    ]
+  },
+  {
+    "app": "Restaurant Reservation",
+    "key": "gourmet",
+    "model": "gpt-4o-mini",
+    "tier": "weak",
+    "screens": 8,
+    "obligations": 20,
+    "refuted0": 12,
+    "refutedFinal": 12,
+    "recovered": 0,
+    "converged": false,
+    "traj": [
+      12,
+      12,
+      12,
+      12
+    ]
+  },
+  {
+    "app": "Real Estate Search",
+    "key": "realestate",
+    "model": "gemini-2.5-flash",
+    "tier": "mid",
+    "screens": 8,
+    "obligations": 21,
+    "refuted0": 0,
+    "refutedFinal": 0,
+    "recovered": 0,
+    "converged": true,
+    "traj": [
+      0
+    ]
+  },
+  {
+    "app": "Job Application",
+    "key": "jobs",
+    "model": "gemini-2.5-flash",
+    "tier": "mid",
+    "screens": 8,
+    "obligations": 20,
+    "refuted0": 0,
+    "refutedFinal": 0,
+    "recovered": 0,
+    "converged": true,
+    "traj": [
+      0
+    ]
+  },
+  {
+    "app": "Job Application",
+    "key": "jobs",
+    "model": "gpt-4o-mini",
+    "tier": "weak",
+    "screens": 8,
+    "obligations": 20,
+    "refuted0": 10,
+    "refutedFinal": 1,
+    "recovered": 9,
+    "converged": false,
+    "traj": [
+      10,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "app": "Food Delivery",
+    "key": "delivery",
+    "model": "gpt-4o-mini",
+    "tier": "weak",
+    "screens": 8,
+    "obligations": 20,
+    "refuted0": 10,
+    "refutedFinal": 0,
+    "recovered": 10,
+    "converged": true,
+    "traj": [
+      10,
+      2,
+      0
+    ]
+  },
+  {
+    "app": "Food Delivery",
+    "key": "delivery",
+    "model": "gemini-2.5-flash",
+    "tier": "mid",
+    "screens": 8,
+    "obligations": 20,
+    "refuted0": 1,
+    "refutedFinal": 0,
+    "recovered": 1,
+    "converged": true,
+    "traj": [
+      1,
+      0
+    ]
+  },
+  {
+    "app": "Online Learning",
+    "key": "lms",
+    "model": "gpt-4o-mini",
+    "tier": "weak",
+    "screens": 7,
+    "obligations": 17,
+    "refuted0": 10,
+    "refutedFinal": 0,
+    "recovered": 10,
+    "converged": true,
+    "traj": [
+      10,
+      0
+    ]
+  },
+  {
+    "app": "Online Learning",
+    "key": "lms",
+    "model": "gemini-2.5-flash",
+    "tier": "mid",
+    "screens": 7,
+    "obligations": 17,
+    "refuted0": 0,
+    "refutedFinal": 0,
+    "recovered": 0,
+    "converged": true,
+    "traj": [
+      0
+    ]
+  },
+  {
+    "app": "Event Tickets",
+    "key": "events",
+    "model": "gpt-4o-mini",
+    "tier": "weak",
+    "screens": 8,
+    "obligations": 19,
+    "refuted0": 1,
+    "refutedFinal": 0,
+    "recovered": 1,
+    "converged": true,
+    "traj": [
+      1,
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "app": "Event Tickets",
+    "key": "events",
+    "model": "gemini-2.5-flash",
+    "tier": "mid",
+    "screens": 8,
+    "obligations": 19,
+    "refuted0": 1,
+    "refutedFinal": 1,
+    "recovered": 0,
+    "converged": false,
+    "traj": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "app": "Issue Tracker",
+    "key": "tracker",
+    "model": "gpt-4o",
+    "tier": "strong",
+    "screens": 9,
+    "obligations": 24,
+    "refuted0": 3,
+    "refutedFinal": 0,
+    "recovered": 3,
+    "converged": true,
+    "traj": [
+      3,
+      0
+    ]
+  },
+  {
+    "app": "Online Store",
+    "key": "store",
+    "model": "gpt-4o",
+    "tier": "strong",
+    "screens": 9,
+    "obligations": 24,
+    "refuted0": 1,
+    "refutedFinal": 1,
+    "recovered": 0,
+    "converged": false,
+    "traj": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "app": "Restaurant Reservation",
+    "key": "gourmet",
+    "model": "gpt-4o",
+    "tier": "strong",
+    "screens": 8,
+    "obligations": 20,
+    "refuted0": 0,
+    "refutedFinal": 0,
+    "recovered": 0,
+    "converged": true,
+    "traj": [
+      0
+    ]
+  },
+  {
+    "app": "Clinic Booking",
+    "key": "clinic",
+    "model": "gpt-4o",
+    "tier": "strong",
+    "screens": 9,
+    "obligations": 24,
+    "refuted0": 3,
+    "refutedFinal": 3,
+    "recovered": 0,
+    "converged": false,
+    "traj": [
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  {
+    "app": "Job Application",
+    "key": "jobs",
+    "model": "gpt-4o",
+    "tier": "strong",
+    "screens": 8,
+    "obligations": 20,
+    "refuted0": 0,
+    "refutedFinal": 0,
+    "recovered": 0,
+    "converged": true,
+    "traj": [
+      0
+    ]
+  },
+  {
+    "app": "Real Estate Search",
+    "key": "realestate",
+    "model": "gpt-4o",
+    "tier": "strong",
+    "screens": 8,
+    "obligations": 21,
+    "refuted0": 4,
+    "refutedFinal": 0,
+    "recovered": 4,
+    "converged": true,
+    "traj": [
+      4,
+      1,
+      0
+    ]
+  },
+  {
+    "app": "Food Delivery",
+    "key": "delivery",
+    "model": "gpt-4o",
+    "tier": "strong",
+    "screens": 8,
+    "obligations": 20,
+    "refuted0": 1,
+    "refutedFinal": 0,
+    "recovered": 1,
+    "converged": true,
+    "traj": [
+      1,
+      0
+    ]
+  },
+  {
+    "app": "Online Learning",
+    "key": "lms",
+    "model": "gpt-4o",
+    "tier": "strong",
+    "screens": 7,
+    "obligations": 17,
+    "refuted0": 2,
+    "refutedFinal": 0,
+    "recovered": 2,
+    "converged": true,
+    "traj": [
+      2,
+      0
+    ]
+  },
+  {
+    "app": "Event Tickets",
+    "key": "events",
+    "model": "gpt-4o",
+    "tier": "strong",
+    "screens": 8,
+    "obligations": 19,
+    "refuted0": 1,
+    "refutedFinal": 1,
+    "recovered": 0,
+    "converged": false,
+    "traj": [
+      1,
+      1,
+      1,
+      1
+    ]
+  }
+]

@@ -1,0 +1,536 @@
+[
+  {
+    "app": "会議室予約",
+    "ver": "base",
+    "kind": "reach",
+    "id": "list",
+    "gt": true,
+    "static": [
+      null,
+      null,
+      true
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "base",
+    "kind": "reach",
+    "id": "detail",
+    "gt": true,
+    "static": [
+      null,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "base",
+    "kind": "reach",
+    "id": "form",
+    "gt": true,
+    "static": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "base",
+    "kind": "reach",
+    "id": "done",
+    "gt": true,
+    "static": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "base",
+    "kind": "trans",
+    "id": "cmp-go-detail",
+    "target": "detail",
+    "injected": true,
+    "gt": true,
+    "static": [
+      false,
+      false,
+      false
+    ],
+    "temporal": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "base",
+    "kind": "trans",
+    "id": "cmp-go-form-create",
+    "target": "form",
+    "injected": true,
+    "gt": true,
+    "static": [
+      false,
+      false,
+      false
+    ],
+    "temporal": [
+      false,
+      false,
+      null
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "base",
+    "kind": "trans",
+    "id": "cmp-submit-form",
+    "target": "done",
+    "injected": false,
+    "gt": true,
+    "static": [
+      false,
+      false,
+      false
+    ],
+    "temporal": [
+      null,
+      false,
+      null
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "base",
+    "kind": "trans",
+    "id": "cmp-go-list-from-done",
+    "target": "list",
+    "injected": false,
+    "gt": true,
+    "static": [
+      false,
+      null,
+      false
+    ],
+    "temporal": [
+      true,
+      true,
+      null
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "injected",
+    "kind": "reach",
+    "id": "list",
+    "gt": true,
+    "static": [
+      null,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "injected",
+    "kind": "reach",
+    "id": "detail",
+    "gt": true,
+    "static": [
+      true,
+      null,
+      true
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "injected",
+    "kind": "reach",
+    "id": "form",
+    "gt": true,
+    "static": [
+      true,
+      null,
+      true
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "injected",
+    "kind": "reach",
+    "id": "done",
+    "gt": true,
+    "static": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "injected",
+    "kind": "trans",
+    "id": "cmp-go-detail",
+    "target": "detail",
+    "injected": true,
+    "gt": false,
+    "static": [
+      null,
+      false,
+      false
+    ],
+    "temporal": [
+      false,
+      null,
+      null
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "injected",
+    "kind": "trans",
+    "id": "cmp-go-form-create",
+    "target": "form",
+    "injected": true,
+    "gt": false,
+    "static": [
+      false,
+      false,
+      false
+    ],
+    "temporal": [
+      null,
+      false,
+      null
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "injected",
+    "kind": "trans",
+    "id": "cmp-submit-form",
+    "target": "done",
+    "injected": false,
+    "gt": true,
+    "static": [
+      false,
+      false,
+      false
+    ],
+    "temporal": [
+      null,
+      null,
+      false
+    ]
+  },
+  {
+    "app": "会議室予約",
+    "ver": "injected",
+    "kind": "trans",
+    "id": "cmp-go-list-from-done",
+    "target": "list",
+    "injected": false,
+    "gt": true,
+    "static": [
+      null,
+      null,
+      null
+    ],
+    "temporal": [
+      true,
+      null,
+      null
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "base",
+    "kind": "reach",
+    "id": "items",
+    "gt": true,
+    "static": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "base",
+    "kind": "reach",
+    "id": "itemDetail",
+    "gt": true,
+    "static": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "base",
+    "kind": "reach",
+    "id": "addItem",
+    "gt": true,
+    "static": [
+      true,
+      null,
+      true
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "base",
+    "kind": "reach",
+    "id": "report",
+    "gt": true,
+    "static": [
+      true,
+      null,
+      null
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "base",
+    "kind": "trans",
+    "id": "cmp-go-itemDetail",
+    "target": "itemDetail",
+    "injected": true,
+    "gt": true,
+    "static": [
+      false,
+      false,
+      false
+    ],
+    "temporal": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "base",
+    "kind": "trans",
+    "id": "cmp-add-item-btn",
+    "target": "addItem",
+    "injected": true,
+    "gt": true,
+    "static": [
+      false,
+      false,
+      false
+    ],
+    "temporal": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "base",
+    "kind": "trans",
+    "id": "cmp-save-item-btn",
+    "target": "items",
+    "injected": false,
+    "gt": true,
+    "static": [
+      false,
+      false,
+      false
+    ],
+    "temporal": [
+      null,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "base",
+    "kind": "trans",
+    "id": "cmp-report-nav",
+    "target": "report",
+    "injected": false,
+    "gt": true,
+    "static": [
+      true,
+      true,
+      true
+    ],
+    "temporal": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "base",
+    "kind": "trans",
+    "id": "cmp-delete-item-btn",
+    "target": "items",
+    "injected": false,
+    "gt": true,
+    "static": [
+      false,
+      null,
+      false
+    ],
+    "temporal": [
+      null,
+      false,
+      false
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "injected",
+    "kind": "reach",
+    "id": "items",
+    "gt": true,
+    "static": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "injected",
+    "kind": "reach",
+    "id": "itemDetail",
+    "gt": true,
+    "static": [
+      null,
+      true,
+      null
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "injected",
+    "kind": "reach",
+    "id": "addItem",
+    "gt": true,
+    "static": [
+      null,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "injected",
+    "kind": "reach",
+    "id": "report",
+    "gt": true,
+    "static": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "injected",
+    "kind": "trans",
+    "id": "cmp-go-itemDetail",
+    "target": "itemDetail",
+    "injected": true,
+    "gt": false,
+    "static": [
+      false,
+      false,
+      false
+    ],
+    "temporal": [
+      null,
+      false,
+      false
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "injected",
+    "kind": "trans",
+    "id": "cmp-add-item-btn",
+    "target": "addItem",
+    "injected": true,
+    "gt": false,
+    "static": [
+      false,
+      false,
+      false
+    ],
+    "temporal": [
+      null,
+      false,
+      false
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "injected",
+    "kind": "trans",
+    "id": "cmp-save-item-btn",
+    "target": "items",
+    "injected": false,
+    "gt": true,
+    "static": [
+      false,
+      null,
+      null
+    ],
+    "temporal": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "injected",
+    "kind": "trans",
+    "id": "cmp-report-nav",
+    "target": "report",
+    "injected": false,
+    "gt": true,
+    "static": [
+      true,
+      true,
+      true
+    ],
+    "temporal": [
+      null,
+      true,
+      true
+    ]
+  },
+  {
+    "app": "在庫管理",
+    "ver": "injected",
+    "kind": "trans",
+    "id": "cmp-delete-item-btn",
+    "target": "items",
+    "injected": false,
+    "gt": true,
+    "static": [
+      false,
+      null,
+      false
+    ],
+    "temporal": [
+      false,
+      null,
+      false
+    ]
+  }
+]

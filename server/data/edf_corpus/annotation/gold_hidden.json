@@ -1,0 +1,920 @@
+{
+  "1": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "タスク管理（カンバン）"
+  },
+  "2": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "タスク管理（カンバン）"
+  },
+  "3": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "タスク管理（カンバン）"
+  },
+  "4": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "タスク管理（カンバン）"
+  },
+  "5": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "タスク管理（カンバン）"
+  },
+  "6": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "タスク管理（カンバン）"
+  },
+  "7": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "タスク管理（カンバン）"
+  },
+  "8": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "タスク管理（カンバン）"
+  },
+  "9": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "タスク管理（カンバン）"
+  },
+  "10": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "タスク管理（カンバン）"
+  },
+  "11": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "タスク管理（カンバン）"
+  },
+  "12": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "タスク管理（カンバン）"
+  },
+  "13": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "タスク管理（カンバン）"
+  },
+  "14": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "タスク管理（カンバン）"
+  },
+  "15": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "タスク管理（カンバン）"
+  },
+  "16": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "タスク管理（カンバン）"
+  },
+  "17": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "タスク管理（カンバン）"
+  },
+  "18": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "19": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "20": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "21": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "22": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "23": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "24": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "25": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "26": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "27": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "28": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "29": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "30": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "31": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "32": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "33": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "34": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "35": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "36": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "37": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "38": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "39": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "40": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "41": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "42": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "家計簿（収支記録・月次集計）"
+  },
+  "43": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "会議室予約システム"
+  },
+  "44": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "会議室予約システム"
+  },
+  "45": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "会議室予約システム"
+  },
+  "46": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "会議室予約システム"
+  },
+  "47": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "会議室予約システム"
+  },
+  "48": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "会議室予約システム"
+  },
+  "49": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "会議室予約システム"
+  },
+  "50": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "会議室予約システム"
+  },
+  "51": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "会議室予約システム"
+  },
+  "52": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "会議室予約システム"
+  },
+  "53": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "会議室予約システム"
+  },
+  "54": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "会議室予約システム"
+  },
+  "55": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "会議室予約システム"
+  },
+  "56": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "会議室予約システム"
+  },
+  "57": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "会議室予約システム"
+  },
+  "58": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "会議室予約システム"
+  },
+  "59": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "会議室予約システム"
+  },
+  "60": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "61": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "62": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "63": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "64": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "65": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "66": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "67": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "68": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "69": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "70": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "71": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "72": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "73": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "74": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "75": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "76": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "在庫管理（商品一覧・入出庫・検索）"
+  },
+  "77": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "78": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "79": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "80": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "81": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "82": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "83": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "84": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "85": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "86": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "87": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "88": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "89": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "90": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "91": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "92": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "93": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "94": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "95": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "96": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "97": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "勤怠打刻（出退勤・履歴）"
+  },
+  "98": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "社内アンケート作成・回答"
+  },
+  "99": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "社内アンケート作成・回答"
+  },
+  "100": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "社内アンケート作成・回答"
+  },
+  "101": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "社内アンケート作成・回答"
+  },
+  "102": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "社内アンケート作成・回答"
+  },
+  "103": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "社内アンケート作成・回答"
+  },
+  "104": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "社内アンケート作成・回答"
+  },
+  "105": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "社内アンケート作成・回答"
+  },
+  "106": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "社内アンケート作成・回答"
+  },
+  "107": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "社内アンケート作成・回答"
+  },
+  "108": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "社内アンケート作成・回答"
+  },
+  "109": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "社内アンケート作成・回答"
+  },
+  "110": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "社内アンケート作成・回答"
+  },
+  "111": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "社内アンケート作成・回答"
+  },
+  "112": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "社内アンケート作成・回答"
+  },
+  "113": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "社内アンケート作成・回答"
+  },
+  "114": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "社内アンケート作成・回答"
+  },
+  "115": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "社内アンケート作成・回答"
+  },
+  "116": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "社内アンケート作成・回答"
+  },
+  "117": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "社内アンケート作成・回答"
+  },
+  "118": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "社内アンケート作成・回答"
+  },
+  "119": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "120": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "121": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "122": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "123": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "124": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "125": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "126": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "127": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "128": {
+    "edf": true,
+    "kind": "dom-effect",
+    "type": "component",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "129": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "130": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "131": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "132": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "133": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "134": {
+    "edf": false,
+    "kind": "subjective/underspecified",
+    "type": "validation",
+    "app": "顧客管理CRM（一覧・詳細・絞り込み）"
+  },
+  "135": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "136": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "137": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "138": {
+    "edf": true,
+    "kind": "screen-reachable",
+    "type": "reachability",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "139": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "140": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "141": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "142": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "143": {
+    "edf": false,
+    "kind": "underspecified-effect",
+    "type": "component",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "144": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "145": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "146": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "147": {
+    "edf": true,
+    "kind": "transition",
+    "type": "component",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "148": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "149": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "150": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "151": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "152": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "ヘルプデスク問い合わせ管理"
+  },
+  "153": {
+    "edf": true,
+    "kind": "dom-validation",
+    "type": "validation",
+    "app": "ヘルプデスク問い合わせ管理"
+  }
+}

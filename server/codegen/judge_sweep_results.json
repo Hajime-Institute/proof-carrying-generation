@@ -1,0 +1,1279 @@
+{
+  "summary": {
+    "judges": [
+      "gemini-2.5-flash",
+      "gpt-4o",
+      "gemini-2.5-pro",
+      "o4-mini",
+      "o3-mini"
+    ],
+    "runsPerObligation": 3,
+    "universalObligations": 21,
+    "certificate": {
+      "confidentVerdicts": "0/21",
+      "note": "all reported out-of-fragment, deterministic"
+    },
+    "perJudge": [
+      {
+        "judge": "gemini-2.5-flash",
+        "confident": "21/21",
+        "inconsistent": "3/21",
+        "abstained": "0/21"
+      },
+      {
+        "judge": "gpt-4o",
+        "confident": "21/21",
+        "inconsistent": "0/21",
+        "abstained": "0/21"
+      },
+      {
+        "judge": "gemini-2.5-pro",
+        "confident": "21/21",
+        "inconsistent": "5/21",
+        "abstained": "0/21"
+      },
+      {
+        "judge": "o4-mini",
+        "confident": "21/21",
+        "inconsistent": "1/21",
+        "abstained": "0/21"
+      },
+      {
+        "judge": "o3-mini",
+        "confident": "21/21",
+        "inconsistent": "2/21",
+        "abstained": "0/21"
+      }
+    ],
+    "crossModel": {
+      "obligationsWhereJudgesSplit": "12/21",
+      "unanimous": "9/21"
+    }
+  },
+  "byObl": {
+    "email:gpt4omini": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": true,
+      "o4-mini": true,
+      "o3-mini": true
+    },
+    "email:gemini25flash": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": true,
+      "o4-mini": true,
+      "o3-mini": true
+    },
+    "email:gpt4o": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": true,
+      "o4-mini": true,
+      "o3-mini": true
+    },
+    "parseint:gpt4omini": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": false,
+      "o4-mini": false,
+      "o3-mini": false
+    },
+    "parseint:gemini25flash": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": true,
+      "o4-mini": false,
+      "o3-mini": true
+    },
+    "parseint:gpt4o": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": true,
+      "o4-mini": false,
+      "o3-mini": true
+    },
+    "dedupe:gpt4omini": {
+      "gemini-2.5-flash": false,
+      "gpt-4o": true,
+      "gemini-2.5-pro": false,
+      "o4-mini": false,
+      "o3-mini": false
+    },
+    "dedupe:gemini25flash": {
+      "gemini-2.5-flash": false,
+      "gpt-4o": true,
+      "gemini-2.5-pro": false,
+      "o4-mini": false,
+      "o3-mini": false
+    },
+    "dedupe:gpt4o": {
+      "gemini-2.5-flash": false,
+      "gpt-4o": true,
+      "gemini-2.5-pro": false,
+      "o4-mini": false,
+      "o3-mini": false
+    },
+    "clamp:gpt4omini": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": false,
+      "o4-mini": true,
+      "o3-mini": true
+    },
+    "clamp:gemini25flash": {
+      "gemini-2.5-flash": false,
+      "gpt-4o": true,
+      "gemini-2.5-pro": false,
+      "o4-mini": true,
+      "o3-mini": true
+    },
+    "clamp:gpt4o": {
+      "gemini-2.5-flash": false,
+      "gpt-4o": true,
+      "gemini-2.5-pro": false,
+      "o4-mini": true,
+      "o3-mini": true
+    },
+    "rle:gpt4omini": {
+      "gemini-2.5-flash": false,
+      "gpt-4o": true,
+      "gemini-2.5-pro": false,
+      "o4-mini": false,
+      "o3-mini": false
+    },
+    "rle:gemini25flash": {
+      "gemini-2.5-flash": false,
+      "gpt-4o": true,
+      "gemini-2.5-pro": false,
+      "o4-mini": false,
+      "o3-mini": false
+    },
+    "rle:gpt4o": {
+      "gemini-2.5-flash": false,
+      "gpt-4o": true,
+      "gemini-2.5-pro": false,
+      "o4-mini": false,
+      "o3-mini": false
+    },
+    "ordinal:gpt4omini": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": true,
+      "o4-mini": true,
+      "o3-mini": true
+    },
+    "ordinal:gemini25flash": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": true,
+      "o4-mini": true,
+      "o3-mini": true
+    },
+    "ordinal:gpt4o": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": true,
+      "o4-mini": true,
+      "o3-mini": true
+    },
+    "truncate:gpt4omini": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": true,
+      "o4-mini": true,
+      "o3-mini": true
+    },
+    "truncate:gemini25flash": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": true,
+      "o4-mini": true,
+      "o3-mini": true
+    },
+    "truncate:gpt4o": {
+      "gemini-2.5-flash": true,
+      "gpt-4o": true,
+      "gemini-2.5-pro": true,
+      "o4-mini": true,
+      "o3-mini": true
+    }
+  },
+  "records": [
+    {
+      "judge": "gemini-2.5-flash",
+      "rows": [
+        {
+          "spec": "email",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "email",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "email",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "parseint",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            false
+          ],
+          "majority": true
+        },
+        {
+          "spec": "parseint",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "parseint",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gemini25flash",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gpt4o",
+          "runs": [
+            false,
+            false,
+            true
+          ],
+          "majority": false
+        },
+        {
+          "spec": "clamp",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "clamp",
+          "tag": "gemini25flash",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "clamp",
+          "tag": "gpt4o",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "rle",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "rle",
+          "tag": "gemini25flash",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "rle",
+          "tag": "gpt4o",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        }
+      ]
+    },
+    {
+      "judge": "gpt-4o",
+      "rows": [
+        {
+          "spec": "email",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "email",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "email",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "parseint",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "parseint",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "parseint",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "clamp",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "clamp",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "clamp",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "rle",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "rle",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "rle",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        }
+      ]
+    },
+    {
+      "judge": "gemini-2.5-pro",
+      "rows": [
+        {
+          "spec": "email",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "email",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "email",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "parseint",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "parseint",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "parseint",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            false,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gemini25flash",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gpt4o",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "clamp",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            true,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "clamp",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "clamp",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "rle",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "rle",
+          "tag": "gemini25flash",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "rle",
+          "tag": "gpt4o",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            false
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        }
+      ]
+    },
+    {
+      "judge": "o4-mini",
+      "rows": [
+        {
+          "spec": "email",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "email",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "email",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "parseint",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "parseint",
+          "tag": "gemini25flash",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "parseint",
+          "tag": "gpt4o",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gemini25flash",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gpt4o",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "clamp",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "clamp",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "clamp",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            false,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "rle",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "rle",
+          "tag": "gemini25flash",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "rle",
+          "tag": "gpt4o",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        }
+      ]
+    },
+    {
+      "judge": "o3-mini",
+      "rows": [
+        {
+          "spec": "email",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "email",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "email",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "parseint",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "parseint",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "parseint",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            false,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gemini25flash",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "dedupe",
+          "tag": "gpt4o",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "clamp",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "clamp",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "clamp",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "rle",
+          "tag": "gpt4omini",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "rle",
+          "tag": "gemini25flash",
+          "runs": [
+            false,
+            false,
+            false
+          ],
+          "majority": false
+        },
+        {
+          "spec": "rle",
+          "tag": "gpt4o",
+          "runs": [
+            false,
+            false,
+            true
+          ],
+          "majority": false
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "ordinal",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gpt4omini",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gemini25flash",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        },
+        {
+          "spec": "truncate",
+          "tag": "gpt4o",
+          "runs": [
+            true,
+            true,
+            true
+          ],
+          "majority": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "N": 8,
+  "generator": "gemini-3.5-flash",
+  "judge": "gemini-2.5-flash",
+  "rows": [
+    {
+      "app": "shop",
+      "n": 8,
+      "behTot": 3,
+      "certPickBeh": 3,
+      "judgePickBeh": 3,
+      "meanBeh": 2.25,
+      "maxBeh": 3,
+      "minBeh": 0,
+      "certOfJudgePick": 12,
+      "jsOfCertPick": 40,
+      "allBeh": [
+        2,
+        3,
+        3,
+        3,
+        2,
+        0,
+        3,
+        2
+      ],
+      "allJs": [
+        29,
+        20,
+        17,
+        40,
+        20,
+        20,
+        20,
+        25
+      ]
+    },
+    {
+      "app": "clinic",
+      "n": 8,
+      "behTot": 2,
+      "certPickBeh": 2,
+      "judgePickBeh": 1,
+      "meanBeh": 1.25,
+      "maxBeh": 2,
+      "minBeh": 1,
+      "certOfJudgePick": 10,
+      "jsOfCertPick": 30,
+      "allBeh": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "allJs": [
+        15,
+        40,
+        30,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "app": "todo",
+      "n": 8,
+      "behTot": 3,
+      "certPickBeh": 3,
+      "judgePickBeh": 2,
+      "meanBeh": 2.5,
+      "maxBeh": 3,
+      "minBeh": 2,
+      "certOfJudgePick": 7,
+      "jsOfCertPick": 35,
+      "allBeh": [
+        3,
+        3,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3
+      ],
+      "allJs": [
+        35,
+        25,
+        50,
+        25,
+        35,
+        35,
+        50,
+        50
+      ]
+    },
+    {
+      "app": "bank",
+      "n": 8,
+      "behTot": 3,
+      "certPickBeh": 0,
+      "judgePickBeh": 0,
+      "meanBeh": 0,
+      "maxBeh": 0,
+      "minBeh": 0,
+      "certOfJudgePick": 9,
+      "jsOfCertPick": 30,
+      "allBeh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "allJs": [
+        30,
+        40,
+        20,
+        20,
+        25,
+        20,
+        20,
+        25
+      ]
+    },
+    {
+      "app": "signup",
+      "n": 8,
+      "behTot": 4,
+      "certPickBeh": 2,
+      "judgePickBeh": 2,
+      "meanBeh": 1.875,
+      "maxBeh": 2,
+      "minBeh": 1,
+      "certOfJudgePick": 8,
+      "jsOfCertPick": 10,
+      "allBeh": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "allJs": [
+        15,
+        10,
+        15,
+        20,
+        15,
+        15,
+        20,
+        15
+      ]
+    },
+    {
+      "app": "expense",
+      "n": 8,
+      "behTot": 3,
+      "certPickBeh": 0,
+      "judgePickBeh": 0,
+      "meanBeh": 0,
+      "maxBeh": 0,
+      "minBeh": 0,
+      "certOfJudgePick": 8,
+      "jsOfCertPick": 20,
+      "allBeh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "allJs": [
+        20,
+        30,
+        20,
+        20,
+        20,
+        25,
+        25,
+        30
+      ]
+    },
+    {
+      "app": "hotel",
+      "n": 8,
+      "behTot": 4,
+      "certPickBeh": 1,
+      "judgePickBeh": 1,
+      "meanBeh": 1,
+      "maxBeh": 1,
+      "minBeh": 1,
+      "certOfJudgePick": 11,
+      "jsOfCertPick": 15,
+      "allBeh": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "allJs": [
+        15,
+        10,
+        15,
+        15,
+        15,
+        10,
+        15,
+        20
+      ]
+    }
+  ],
+  "agg": {
+    "behTotSum": 22,
+    "certPick": 11,
+    "judgePick": 9,
+    "mean": 8.875
+  }
+}
